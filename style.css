@@ -1,0 +1,170 @@
+.section{
+    display:flex;
+    background: #216869;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-radius: 30px;
+    padding: 5px;
+    border: 2px solid #9CC5A1;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top:5px;
+    margin-bottom:5px;
+
+}
+
+body {
+    background: #DCE1DE;
+    min-width: 500px;
+   
+    
+    
+}
+
+.subtitle1{
+    color:#DCE1DE;
+    margin-bottom:0px;
+    font-family:"OpenSans"
+}
+
+.NameTitle{
+    margin-top:0px;
+    margin-bottom:0px;
+    color: #9CC5A1;
+    font-family: "Playfaire";
+    font-size: 50px;
+    font-weight:bold;
+    text-shadow: 0px 0px 2px black;
+}
+
+.subtitle2{
+    margin-top: 0px;
+    margin-bottom:0px;
+    font-family: "OpenSans";
+    font-style:italic;
+    font-weight: bold;
+    color:#DCE1DE
+}
+
+.subtitle3{
+    margin-top: 0px;
+    margin-bottom:0px;
+    font-family: "Playfaire";
+    font-size:30px;
+    font-weight: bold;
+    color:#9CC5A1;
+}
+
+@font-face {
+    font-family: "Playfaire";
+    src: url("fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "OpenSans";
+    src: url("fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf");
+}
+
+img{
+    
+    border-radius: 30px;
+    width: 90%;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom: 20px;
+    margin-top:15px;
+    border: 2px solid #9CC5A1
+}
+
+.para{
+    color:#DCE1DE;
+    font-family: "OpenSans";
+
+    margin: 10px 20px 20px 20px;
+    border-radius: 25px;
+    padding: 8px 16px;
+    text-shadow: 0px 0px 2px black;
+    border: 2px solid #9CC5A1;
+    
+}
+
+.vl{
+    width:100%;
+    height:30px;
+	background: linear-gradient(to right, 
+	                         transparent 0%, 
+	                              transparent calc(50% - 0.81px), 
+	                              #216869 calc(50% - 0.8px), 
+	                              #216869 calc(50% + 0.8px), 
+	                              transparent calc(50% + 0.81px), 
+	                              transparent 100%); 
+    margin-top: 0px;
+    margin-bottom: 0px;
+    
+}
+
+.hl{
+    width:50%;
+    color:"#216869";
+    margin-bottom: 0px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    border-top:2px solid #216869;
+
+}
+
+#tree1{
+    display:flex;
+}
+
+#Experiences-Projects{
+    display:flex;
+    justify-content: space-around;
+    margin-left:15%;
+    margin-right:15%;
+}
+
+#WE1{
+    min-width:200px;
+}
+
+.description{
+    color:#DCE1DE;
+    font-family: "OpenSans";
+    padding:20px;
+    margin: 10px 20px 20px 20px;
+    padding: 4px 8px;
+    text-shadow: 0px 0px 2px black;
+    text-align: start;
+}
+
+.textSection{
+    margin:10px 20px;
+    min-width:60%;
+    border-radius: 20px;
+    border: 2px solid #9CC5A1;
+}   
+
+.UL{
+    color:#DCE1DE;
+    font-family: "OpenSans";
+    text-align:start;
+    margin: 10px 20px 20px 20px;
+    
+    text-shadow: 0px 0px 2px black;
+}
+
+#Experiences{
+    min-width:80%;
+    margin-left:40%;
+
+}
+
+#Projects{
+    min-width:80%;
+    margin-right:40%;
+  
+}
