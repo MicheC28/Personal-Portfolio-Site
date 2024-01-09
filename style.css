@@ -81,16 +81,37 @@ body {
 }
 
 img{
-    
+    width:50%;
+    margin-bottom:0px;
+    margin-top:15px;
     border-radius: 30px;
-    width: 90%;
+    border-top: 2px solid #9CC5A1;
+    border-left: 2px solid #9CC5A1;
+    border-right: 2px solid #9CC5A1;
+    /*
+    border-radius: 30px;
+    width: 50%;
     display:block;
     margin-left:auto;
     margin-right:auto;
     margin-bottom: 20px;
     margin-top:15px;
     border: 2px solid #9CC5A1
+    */
 }
+
+#bg{
+    border-top:2px solid #9CC5A1;
+    border-right:2px solid #9CC5A1;
+    border-left:2px solid #9CC5A1;
+    border-radius:25px;
+    margin-left:2%;
+    margin-right:2%;
+    margin-top:2%;
+
+    padding:0px;
+}
+
 
 .para{
     color:#DCE1DE;
