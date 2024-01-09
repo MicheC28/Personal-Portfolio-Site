@@ -14,8 +14,21 @@
 
 }
 
+#intro{
+    margin-left:10%;
+    margin-right:10%;
+}
+
+#about{
+    margin-left:10%;
+    margin-right:10%;
+    padding-left:10%;
+    padding-right:10%;
+}
+
+
 body {
-    background: #DCE1DE;
+    background: #c8e0d2;
     min-width: 500px;
    
     
@@ -54,6 +67,7 @@ body {
     font-size:30px;
     font-weight: bold;
     color:#9CC5A1;
+    text-shadow: 0px 0px 2px black;
 }
 
 @font-face {
@@ -122,9 +136,12 @@ img{
 
 #Experiences-Projects{
     display:flex;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content:right;
+    /*
     margin-left:15%;
     margin-right:15%;
+    */
 }
 
 #WE1{
@@ -157,6 +174,7 @@ img{
     text-shadow: 0px 0px 2px black;
 }
 
+/*
 #Experiences{
     min-width:80%;
     margin-left:40%;
@@ -168,3 +186,4 @@ img{
     margin-right:40%;
   
 }
+*/
