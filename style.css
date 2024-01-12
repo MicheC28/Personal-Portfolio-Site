@@ -305,3 +305,36 @@ img{
     border-radius: 100%;
     opacity: 0.7;
   }
+
+
+  /* styles for mobile devices */
+@media only screen and (max-width: 767px) {
+    .NameTitle{
+        margin-top:0px;
+        margin-bottom:0px;
+        color: #9CC5A1;
+        font-family: "Playfaire";
+        font-size: 50px;
+        font-weight:bold;
+    }
+
+    .subtitle3{
+        margin-top: 0px;
+        margin-bottom:0px;
+        font-family: "Playfaire";
+        font-size:30px;
+        font-weight: bold;
+        color:#9CC5A1;
+    }
+
+    nav li a{
+        font-size: 1.1rem;
+        cursor: pointer;
+        padding: 20px 15px;
+        transition: 0.5s;
+        color:white;
+        text-decoration:none;
+        font-family: "Playfaire";
+        color:#9CC5A1;
+    }
+  }
