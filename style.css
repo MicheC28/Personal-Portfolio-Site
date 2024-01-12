@@ -29,12 +29,77 @@
 
 
 body {
-    background: #bddbd0;
+    background: #d5e7e1;
     min-width: 500px;
-   
-    
+    position:relative;
+    height:100vh;   
+
+}
+
+nav{
+    background-color:#103434;
+    gap:30px;
+    display:flex;
+    position:fixed;
+    top:-80px;
+    width:100%;
+    margin-left:-7px;
+    /*transition: top 0.3s;*/
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 10px 10px rgba(128,128,128,0.548);
+    color:white;
+    padding-bottom:5px;
+    padding-top:5px;
+}
+
+#headspace{
+    height:50px;
+}
+
+#normnav{
+    top:0;
+}
+
+#logo{
+    border-radius:100%;
     
 }
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap:40px;
+}
+
+
+
+nav li a{
+    font-size: 1.1rem;
+    cursor: pointer;
+    padding: 20px 15px;
+    transition: 0.5s;
+    color:white;
+    text-decoration:none;
+    font-family: "Playfaire";
+    color:#9CC5A1;
+    text-shadow: 0px 0px 2px black;
+}
+
+nav li a:hover{
+    color:#eb9bad;
+    padding-bottom:10px;
+    border-bottom:4px #eb9bad solid;
+    transition:0.5s;
+   
+}
+
+.hide{
+    top:70px;
+}
+
+
 
 .subtitle1{
     color:#DCE1DE;
@@ -50,6 +115,11 @@ body {
     font-size: 50px;
     font-weight:bold;
     text-shadow: 0px 0px 2px black;
+}
+
+.NameTitle:hover{
+    color:#eb9bad;
+    transition:0.3s;
 }
 
 .subtitle2{
@@ -131,6 +201,10 @@ img{
     
 }
 
+.para:hover{
+    border: 2px solid #eb9bad;
+}
+
 .vl{
     width:100%;
     height:30px;
@@ -191,7 +265,11 @@ img{
     border-radius: 20px;
     border: 2px solid #9CC5A1;
     background:rgba(0,0,0,0.5)
-}   
+}
+
+.textSection:hover{
+    border: 2px solid #eb9bad;
+}
 
 .UL{
     color:#DCE1DE;
@@ -220,3 +298,10 @@ img{
     flex-direction:row;
     justify-content: center;
 }
+
+
+.ball {
+    position: absolute;
+    border-radius: 100%;
+    opacity: 0.7;
+  }
