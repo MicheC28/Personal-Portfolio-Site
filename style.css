@@ -6,12 +6,18 @@
     text-align: center;
     border-radius: 30px;
     padding: 5px;
-    border: 2px solid #9CC5A1;
-    margin-left: 10%;
-    margin-right: 10%;
+    border: 3px solid #103434;
+    margin-left: 20%;
+    margin-right: 20%;
     margin-top:5px;
     margin-bottom:5px;
+    transition:0.3px;
 
+}
+
+.section:hover{
+    transition:0.3s;
+    border-color:#f5426c;
 }
 
 #intro{
@@ -25,6 +31,30 @@
     margin-right:20%;
     padding-left:0%;
     padding-right:0%;
+}
+
+#education{
+    margin-left:15%;
+    margin-right:15%;
+}
+
+#coursework{
+    padding-top:0px;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#coursework-split{
+    margin-top:10px;
+    margin-bottom:10px;
+    border-left:2px solid #9CC5A1;
+    height:100px;
+}
+
+#awards-cert{
+    display:flex;
+    justify-content: center;
 }
 
 
@@ -57,9 +87,34 @@ nav{
     height:50px;
 }
 
-#normnav{
-    top:0;
+.icon{
+    margin:10px;
+    width:80px;
+    /* filter: opacity(0.5) drop-shadow(0 0 0 blue); */
+    transition:0.3s;
+    border:2px solid #216869;
+    padding:10px;
+    border-radius:20px;
+    background:#216869;
+
 }
+
+.icon:hover{
+    border:2px solid #eb9bad;
+    transition:0.3s;
+    /* background:#9CC5A1; */
+}
+
+#icon_group{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding:10px;
+    margin:10px;
+}
+
+
 
 #logo{
     border-radius:100%;
@@ -141,6 +196,11 @@ nav li a:hover{
     text-shadow: 0px 0px 2px black;
 }
 
+.subtitle3:hover{
+    color:#eb9bad;
+    transition:0.3s;
+}
+
 @font-face {
     font-family: "Playfaire";
     src: url("fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf");
@@ -152,7 +212,7 @@ nav li a:hover{
 }
 
 img{
-    width:100%;
+    width:80%;
     margin-bottom:0px;
     margin-top:15px;
     /*
@@ -183,6 +243,12 @@ img{
     margin-top:2%;
     background: rgba(0,0,0,0.5);
     padding:0px;
+    transition:0.3s;
+}
+
+#bg:hover{
+    transition:0.3s;
+    border-color:#eb9bad;
 }
 
 
@@ -195,7 +261,7 @@ img{
     padding: 8px 16px;
     text-shadow: 0px 0px 2px black;
     border: 2px solid #9CC5A1;
-    font-size:20px;
+    font-size:15px;
     background:rgba(0,0,0,0.5);
     
     

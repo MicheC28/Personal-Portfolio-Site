@@ -3,12 +3,13 @@ window.onscroll = function() {
   };
   
   function scrollFunction() {
-    if (window.scrollY > 20) {
-      document.getElementById("navbar").style.top = "0";
-    } else {
-      document.getElementById("navbar").style.top = "-80px";
-      console.log("hello");
-    }
+    document.getElementById("navbar").style.top = "0px";
+    // if (window.scrollY > 20) {
+    //   document.getElementById("navbar").style.top = "0px";
+    // } else {
+    //   document.getElementById("navbar").style.top = "-80px";
+    //   console.log("hello");
+    // }
   }
  
  

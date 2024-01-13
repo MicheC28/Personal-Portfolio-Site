@@ -2,21 +2,8 @@
 <head>
     <link rel="stylesheet" href="style.css">
 
-    <body>
+    <body onload = "scrollFunction()">
         <!--NAVBAR?-->
-
-        <nav class="nav-contrainer" id="normnav">
-
-            <p class="subtitle3" id="logo"> <span style="color:#eb9bad;">//</span>mc</p>
-
-            <ul id="nav-bar-links">
-                <li><a href="www.google.com"> home</a></li>
-                <li> <a href="www.google.com"> MiChe </a></li>
-                <li> <a href="mailto:m89chen@uwaterloo.ca">Contact me!</a></li>
-            </ul>
-
-        </nav>
-
 
         <nav class="nav-contrainer" id="navbar">
             <p class="subtitle3" id="logo"><span style="color:#eb9bad;">//</span>mc</p>
@@ -33,7 +20,7 @@
 
         <div class="section" id="intro">
             <div id="bg">
-                <p class="subtitle1">Hello, I'm </p>
+                <p class="subtitle2" style="margin-top:10px;">Hello, I'm </p>
                 <p class="NameTitle"> michelle chen</p>
                 <p class="subtitle2"> Computer Engineering Student
                                         @ UWaterloo
@@ -48,27 +35,84 @@
 
         <div class="section" id="about">
             
-            <p class="subtitle3"> About me!</p>
-            <p class="para"> Passionate Computer Engineering student with a keen interest in Robotics and 
-                Wearable Technology. Bringing innovation to life through code and circuitry. Eager to connect with like-minded 
-                professionals and explore the future of human-technology interaction.</p>
+            <p class="subtitle3"> About me</p>
+            <p class="para"> 
+                <br>
+                I'm a passionate <span style="font-weight:bold;">Computer Engineering</span> student with a keen interest developing software and hardward for <span style="font-weight:bold;">Robotics</span> and 
+                <span style="font-weight: bold;">Wearable Technology</span>. 
+                <br><br>
+                I've worked with <b>web development</b>, <b>OOP languages</b>, and most recently, <b>machine learning</b>.
+                <br><br>
+                In my spare time, I love working on my personal projects, painting and eating good food.😊
+                <br><br>
+            </p>
+
+            <div id="icon-group">
+                <a  href="https://www.linkedin.com/in/michelle-chen-63a965216/"><img class="icon" src="images/linkedin-logo-png-2026.png"></a>
+                <a href="https://github.com/MicheC28"><img class="icon" src="images/github_logo.png"></a>
+                <a href="https://www.instagram.com/shashakookie28/"><img class="icon" src="images/instagram_logo.png" style="width:70px;"></a>
+            </div>
             
         </div>
 
         <div class="vl"></div>
 
+        <div class="section" id="education">
+            <p class="subtitle3">Education</p>
+            <p class="para">
+                <span style="font-weight:bold; font-style:italic;">University of Waterloo </span>- Candidate for BASc in Computer Engineering 2023 - 2028 (Expected)
+            </p>
+
+            <div class="textSection">
+                <p class="description" style="text-align: center; font-weight: bold; font-style: italic;margin-bottom:0px;">
+                    Relevant Coursework
+                </p>
+
+                <div id="coursework">
+                    <ul class="UL" style="width:300px">
+                        <p class="description" style="margin-bottom:0px; margin-top:0px; font-weight:bold;"> Completed</p>
+                        <li><span class="LIspan">
+                            Fundamentals of Programming - C++
+                        </span></li>
+                    </ul>
+
+                    <div id="coursework-split"></div>
+
+                    <ul class="UL" style="width:300px;">
+                        <p class="description" style="margin-bottom:0px; margin-top:0px;font-weight: bold;"> Current</p>
+                        
+                        <li><span class="LIspan">
+                            Discrete Math and Logic I
+                        </span></li>
+
+                        <li><span class="LIspan">
+                            Linear Circuits
+                        </span></li>
+
+                        <li><span class="LIspan">
+                            Digital Circuits and Systems - VHDL, FPGA Design
+                        </span></li>
+                    </ul>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="vl"></div>
+        
         <div class="section">
-            <p class="subtitle3"> Skills!</p>
+            <p class="subtitle3"> Skills</p>
             <div class="textSection">
                 <div id="skills-list">
                 
                     <ul class="UL">
                         <li><span class="LIspan">
-                            Languages: C++, Python, HTML5, CSS3, JavaScript
+                            <span style="font-weight:bold;">Languages</span>: C++, Python, HTML5, CSS3, JavaScript
                         </span></li>
 
                         <li><span class="LIspan">
-                            Libraries: scikit-learn, pandas
+                            <span style="font-weight:bold;">Libraries</span>: scikit-learn, pandas
                         </span></li>
 
                     </ul>
@@ -93,10 +137,52 @@
 
         <div class="vl"></div>
 
+        <div class="section">
+            <p class="subtitle3"> Awards and Certifications </p>
+            
+                <p class="para" style="text-align:center;"> I'm always looking for something new to learn!</p>
+            
+                <div class="textSection">
+                <div id="awards-cert">
+                    <ul class="UL">
+                        <li><span class="LIspan">
+                            <span style="font-weight:bold;">Python</span>  Certificate - Kaggle 
+                        </span> </li>
+
+                        <li><span class="LIspan">
+                            <span style="font-weight:bold">Intro the Machine Learning</span> Certificate - Kaggle 
+                        </span> </li>
+
+                        <li><span class="LIspan">
+                            <span style="font-weight:bold">IBM Z Xplore</span> - Concepts Badge 
+                        </span> </li>
+
+                        <li><span clas="LIspan">
+                            <span style="font-weight: bold;">Leadership</span> Certification - The Ripple Effect Education
+                        </span></li>
+
+                    </ul>
+
+                    <ul class="UL">
+                        <li><span class="LIspan">
+                            <span style="font-weight:bold;">Governor General's Academic Medal</span> - Highest Graduating Average 
+                        </span> </li>
+
+                        <li><span class="LIspan"> 
+                            <span style="font-weight:bold;">Second Place Team 2021, 2022</span> - UWindsor Science Olympiad
+                        </span></li>
+
+
+                    </ul>
+                </div>    
+            </div>
+        </div>
+
+        <div class="vl"></div>
 
         <div class="section">
             <p class="subtitle3"> Projects </p>
-            <p class="para"> In my spare time, I like make cool things.</p>
+            <p class="para"> In my spare time, I like to make cool things.</p>
             
             <div id="Projects-div">
 
