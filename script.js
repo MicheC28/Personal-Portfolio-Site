@@ -57,3 +57,16 @@ balls.forEach((el, i, ra) => {
     }
   );
 });  
+
+
+let homeButton = document.getElementById("nav-homepage")
+let MiCheButton = document.getElementById("nav-MiChe")
+
+
+homeButton.addEventListener("click", function(){
+  alert("You're already here silly!");
+})
+
+MiCheButton.addEventListener("click", function(){
+  alert("Sorry, still under construction!");
+})
