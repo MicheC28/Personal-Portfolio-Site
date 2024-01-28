@@ -7,8 +7,8 @@
     border-radius: 30px;
     padding: 5px;
     border: 3px solid #103434;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
     margin-top:5px;
     margin-bottom:5px;
     transition:0.3px;
@@ -22,13 +22,13 @@
 
 #intro{
     margin-top:30px;
-    margin-left:30%;
-    margin-right:30%;
+    margin-left:10%;
+    margin-right:10%;
 }
 
 #about{
-    margin-left:20%;
-    margin-right:20%;
+    margin-left:10%;
+    margin-right:10%;
     padding-left:0%;
     padding-right:0%;
 }
@@ -77,13 +77,14 @@ nav{
     color:white;
     padding-bottom:5px;
     padding-top:5px;
+    z-index:11;
 }
 
-#headspace{
+.headspace{
     height:50px;
 }
 
-.icon{
+.home-icon{
     margin:10px;
     width:80px;
     /* filter: opacity(0.5) drop-shadow(0 0 0 blue); */
@@ -95,7 +96,7 @@ nav{
 
 }
 
-.icon:hover{
+.home-icon:hover{
     border:2px solid #eb9bad;
     transition:0.3s;
     /* background:#9CC5A1; */
@@ -110,7 +111,25 @@ nav{
     margin:10px;
 }
 
+.projects-icon{
+    margin:10px;
+    width:40px;
+    transition:0.3s;
+    border:2px solid #103434;
+    padding:10px;
+    border-radius:20px;
+    background:#103434;
+}
 
+.projects-icon:hover{
+    margin:10px;
+    width:40px;
+    transition:0.3s;
+    border:2px solid #eb9bad;
+    padding:10px;
+    border-radius:20px;
+    background:#103434;
+}
 
 #logo{
     border-radius:100%;
@@ -122,6 +141,7 @@ nav ul{
     display: flex;
     align-items: center;
     gap:40px;
+    z-index:11; 
 }
 
 
@@ -166,6 +186,15 @@ nav li a:hover{
     font-size: 50px;
     font-weight:bold;
     text-shadow: 0px 0px 2px black;
+    animation-name: name;
+    animation-duration:4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes name{
+    from{color:#9CC5A1;}
+    50%{color:#eb9bad;}
+    to{color:#9CC5A1;}
 }
 
 .NameTitle:hover{
@@ -211,22 +240,7 @@ img{
     width:80%;
     margin-bottom:0px;
     margin-top:15px;
-    /*
-    border-radius: 30px;
-    border-top: 2px solid #9CC5A1;
-    border-left: 2px solid #9CC5A1;
-    border-right: 2px solid #9CC5A1;
-    */
-    /*
-    border-radius: 30px;
-    width: 50%;
-    display:block;
-    margin-left:auto;
-    margin-right:auto;
-    margin-bottom: 20px;
-    margin-top:15px;
-    border: 2px solid #9CC5A1
-    */
+    max-width:500px;
 }
 
 #bg{
@@ -275,6 +289,21 @@ img{
 	                              transparent calc(50% - 0.81px), 
 	                              #216869 calc(50% - 0.8px), 
 	                              #216869 calc(50% + 0.8px), 
+	                              transparent calc(50% + 0.81px), 
+	                              transparent 100%); 
+    margin-top: 0px;
+    margin-bottom: 0px;
+    
+}
+
+.vl-2{
+    width:100%;
+    height:30px;
+	background: linear-gradient(to right, 
+	                         transparent 0%, 
+	                              transparent calc(50% - 0.81px), 
+	                              #9CC5A1 calc(50% - 0.8px), 
+	                              #9CC5A1 calc(50% + 0.8px), 
 	                              transparent calc(50% + 0.81px), 
 	                              transparent 100%); 
     margin-top: 0px;
@@ -421,3 +450,185 @@ img{
         color:#9CC5A1;
     }
   }
+
+  .accordion{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    height:400px;
+    gap:16px;
+    transition:0.3s;
+    margin-left:0px;
+    padding-left:0px;
+    
+  }
+
+  .accordion:hover{
+    gap:10px;
+  }
+
+
+
+  .accordion li{
+    position:relative;
+    overflow:hidden;
+    flex: 0 0 13%;
+    border-radius: 50px;
+    opacity: 0.75;  
+  }
+
+  .accordion li img{
+    position:absolute;
+    top:50%;
+    left:50%;
+    translate: -50% -50%;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+
+  }
+  
+
+  .accordion li, .accordion li img, .accordion li .accordion-content, .accordion li .accordion-content span{
+    transition:0.3s;
+  }
+
+  .accordion p {
+    white-space: nowrap;
+  }
+  
+  .accordion li .accordion-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    color: #fff;
+    padding: 15px;
+    background: #02022e;
+    background: linear-gradient(
+      0deg,
+      rgb(0 0 0 / 70%) 10%,
+      rgb(255 255 255 / 0%) 100%
+    );
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .accordion li .accordion-content span {
+    position: absolute;
+    z-index: 3;
+    left: 50%;
+    bottom: 25px;
+    translate: -300px 0;
+    visibility: hidden;
+    opacity: 0;
+  }
+  
+  .accordion li:hover {
+    flex: 0 0 37%;
+    scale: 1;
+    z-index: 10;
+    opacity: 1;
+    gap:100px;
+   
+  }
+  
+  .accordion li:hover .accordion-content {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .accordion li:hover span {
+    translate: -50% 0;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  #accordion-container{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .accordion-buttons{
+    padding: 10px 20px;
+    font-family: "OpenSans";    
+    background-color:#d5e7e1;
+    border-radius: 10px;
+    border: 2px solid #103434;
+    color:#103434;
+    font-weight: bold;
+    transition:0.3s;
+    margin-bottom:0;
+    margin-top:0;
+    cursor: pointer;
+  }
+
+  .accordion-buttons:hover{
+    border: 2px solid #f5426c;
+    color:#f5426c;
+    transition:0.3s;
+  }
+
+.projects-pic-div{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin:20px;
+    gap:20px;
+}
+
+.projects-pic-div img{
+    border: 3px solid #216869;
+}
+
+.projects-pic-div img:hover{
+    border: 3px solid #eb9bad;
+}
+
+.projects-content-div{
+    display:flex;
+    margin:20px;
+}
+
+.projects-content-div img{
+    width:400px;
+    max-height:250px;
+    border:3px solid #216869;
+    transition:0.3s;
+}
+
+.projects-content-div img:hover{
+    border:3px solid #eb9bad;
+    transition: 0.3s;
+}
+
+.project-ideas-ctn{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.projects-ideas-cardDisplay{
+    background:#103434;
+    border:#216869 3px solid;
+    border-radius:10px;
+    padding: 10px 20px;
+    margin: 10px 20px;
+    font-family:'OpenSans';
+    font-size:smaller;
+    color:#216869;
+    transition:0.3s;
+}
+
+.projects-ideas-cardDisplay:hover{
+    border:#eb9bad 3px solid;
+    color:#eb9bad;
+    transition:0.3s;
+}
+
+.anchor{
+    display:hidden;
+}

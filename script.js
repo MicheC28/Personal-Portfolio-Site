@@ -1,3 +1,6 @@
+
+
+
 window.onscroll = function() {
     scrollFunction();
   };
@@ -26,7 +29,7 @@ for (let i = 0; i < numBalls; i++) {
   ball.classList.add("ball");
   ball.style.background = colors[Math.floor(Math.random() * colors.length)];
   ball.style.left = `${Math.floor(Math.random() * 200)}vw`;
-  ball.style.top = `${Math.floor(Math.random() * 200)}vh`;
+  ball.style.top = `${Math.floor(Math.random() * 400)}vh`;
   ball.style.transform = `scale(${Math.random()})`;
   ball.style.width = `${Math.random()*5}em`;
   ball.style.height = ball.style.width;
@@ -59,14 +62,37 @@ balls.forEach((el, i, ra) => {
 });  
 
 
-let homeButton = document.getElementById("nav-homepage")
-let MiCheButton = document.getElementById("nav-MiChe")
+let homeButton = document.getElementById("nav-homepage");
+let MiCheButton = document.getElementById("nav-MiChe");
+let projectsButton = document.getElementById("nav-projects");
 
 
-homeButton.addEventListener("click", function(){
-  alert("You're already here silly!");
-})
+
+homeButton.addEventListener("click", go_to_home_page);
+
+function go_to_home_page(){
+  const current = window.location.href;
+  if (current == "file:///C:/Users/miche/Documents/GitHub/Portfolio/index.html"){
+    alert("You're already here silly!");
+  }
+  else{
+    window.location.href ='index.html';
+  }
+}
 
 MiCheButton.addEventListener("click", function(){
   alert("Sorry, still under construction!");
 })
+
+projectsButton.addEventListener('click', go_to_projects_page);
+
+function go_to_projects_page(){
+  const current = window.location.href;
+
+  if(current == "file:///C:/Users/miche/Documents/GitHub/Portfolio/Projects-page.html"){
+    alert("You're already here silly!");
+  }
+  else{
+    window.location.href = 'Projects-page.html';
+  }
+}
