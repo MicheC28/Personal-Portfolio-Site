@@ -72,7 +72,7 @@ homeButton.addEventListener("click", go_to_home_page);
 
 function go_to_home_page(){
   const current = window.location.href;
-  if (current == "file:///C:/Users/miche/Documents/GitHub/Portfolio/index.html"){
+  if (current == "https://michellechenportfolio.netlify.app/index.html"){
     alert("You're already here silly!");
   }
   else{
@@ -89,7 +89,7 @@ projectsButton.addEventListener('click', go_to_projects_page);
 function go_to_projects_page(){
   const current = window.location.href;
 
-  if(current == "file:///C:/Users/miche/Documents/GitHub/Portfolio/Projects-page.html"){
+  if(current == "https://michellechenportfolio.netlify.app/projects-page"){
     alert("You're already here silly!");
   }
   else{
