@@ -4,7 +4,8 @@ var ideasList = ['an alarm clock for my friends cos they are always late to 8:30
                 'to do list application because I have the memory of a gold fish',
                 'to do list application because I have the memory of a gold fish',
                 'wordle but more relatable (dont ask me what this means)',
-                'can i train generative ai to make art by my style that would be cool' ];
+                'can i train generative ai to make art by my style that would be cool',
+                'a bowling ball which makes me win every time because im starting to get sick of losing' ];
 
 var display_list = document.getElementById('project_ideas');
 

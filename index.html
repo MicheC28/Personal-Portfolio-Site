@@ -1,46 +1,124 @@
 <!DOCTYPE html>
 <head>
+    <!-- Import CSS -->
     <link rel="stylesheet" href="style.css">
 
     <body onload = "scrollFunction()">
-        <!--NAVBAR?-->
-
+        
+        <!-- Navigation Bar -->
         <nav class="nav-contrainer" id="navbar">
-            <p class="subtitle3" id="logo"><span style="color:#eb9bad;">//</span>mc</p>
-
+            <p class="subtitle3" id="logo"><span class="logo_pink">//</span>mc</p>
+    
             <ul id="nav-bar-links">
-                <li><a id="nav-homepage"> home</a></li>
-                <li> <a id="nav-projects">projects</a></li>
-                <li> <a id="nav-MiChe"> MiChe </a></li>
-                <li> <a id="nav-contact" href="mailto:m89chen@uwaterloo.ca">contact me!</a></li>
-                
-            </ul>
 
+                <!-- Nav Bar: HOME -->
+                <li>
+                    <a id="nav-homepage"> home</a>
+                </li>
+
+                <!-- Nav Bar: PROJECTS (homepage, ideas list, notes) -->
+                <li>
+                    <a id="nav-projects">projects</a>
+                    <div class="dropdown-content-wrapper">
+
+                        <div class="dropdown-content">
+                            <a id="nav-projects-projectsHomepage">
+                                projects homepage
+                            </a>
+                        </div>
+                        
+                        <div class="dropdown-content">
+                            <a id="nav-projects-ideas">
+                                an unnecessary list of project ideas
+                            </a>
+                        </div>
+                        
+                        <div class="dropdown-content">
+                            <a id="nav-projects-notes">
+                                notes
+                            </a>
+                        </div>
+
+                    </div>
+                
+                </li>
+
+                <!-- Nav Bar: MiChe Arts Collection (homepage, Minis, Iteration1, Individuals) -->
+                <li class="drowdown-li"> 
+                    <a class="temp" id="nav-MiChe"> MiChe </a>
+                    <div class="dropdown-content-wrapper">
+
+                        <div class="dropdown-content">
+                            <a id="nav-MiChe-Homepage">
+                                MiChe homepage
+                            </a>
+                        </div>
+                        
+                        <div class="dropdown-content">
+                            <a id = "nav-MiChe-Minis">
+                                Minis Collection
+                            </a>
+                        </div>
+                        
+                        <div class="dropdown-content">
+                            <a id="nav-MiChe-Iteration1">
+                                Iteration 1 Collection
+                            </a>
+                        </div>
+
+                        <div class="dropdown-content">
+                            <a id="nav-MiChe-Individuals">
+                                Individual Pieces
+                            </a>
+                        </div>
+
+                    </div>
+                    
+                </li>
+
+                <!-- Nav Bar: CONTACT (mailto) -->
+                <li> 
+                    <a id="nav-contact" href="mailto:m89chen@uwaterloo.ca">
+                    contact me!
+                    </a>
+                </li>
+
+            </ul>
+    
         </nav>
 
         <div class="headspace"></div>
 
+
+        <!-- INTRO SECTION -->
+
         <div class="section" id="intro">
+
             <div id="bg">
+
                 <p class="subtitle2" style="margin-top:10px;">Hello, I'm </p>
                 <p class="NameTitle"> michelle chen</p>
-                <p class="subtitle2"> Computer Engineering Student
-                                        @ UWaterloo
-                </p>
-            
-                <img id="Headshot" src="images/headshot.noback.png">
+                <p class="subtitle2"> Computer Engineering Student @ UWaterloo</p>
+                
+                <!-- PROFILE PIC -->
+                <div class="image-wrapper">
+                    <img id="Headshot" src="images/headshot.noback.png" Alt="Image of Michelle Chen">
+                </div>
+
             </div>
             
         </div>
-            
+         
+        <!-- VERTICLE LINE -->
         <div class="vl"></div>
 
+        <!-- ABOUT ME  -->
         <div class="section" id="about">
             
             <p class="subtitle3"> About me</p>
             <p class="para"> 
                 <br>
-                I'm a passionate <span style="font-weight:bold;">Computer Engineering</span> student at the <span style="font-weight: bold;">University of Waterloo</span> with a keen interest developing software and hardward for further connecting the <span style="font-weight: bold;"> physical and technolgical worlds</span>. 
+                I'm a passionate <b>Computer Engineering</b> student at the <b>University of Waterloo</b> with a keen interest developing software and hardward for further connecting the <b>physical and technolgical worlds</b>. 
                 <br><br>
                 I've worked with <b>web development</b>, <b>OOP languages</b>, and most recently, <b>machine learning</b>.
                 <br><br>
@@ -48,264 +126,442 @@
                 <br><br>
             </p>
 
+
+            <!-- ICONS (LinkedIn, GitHub, Insta) -->
             <div id="icon-group">
-                <a  href="https://www.linkedin.com/in/michelle-chen-63a965216/"><img class="home-icon" src="images/linkedin-logo-png-2026.png"></a>
-                <a href="https://github.com/MicheC28"><img class="home-icon" src="images/github_logo.png"></a>
-                <a href="https://www.instagram.com/shashakookie28/"><img class="home-icon" src="images/instagram_logo.png" style="width:70px;"></a>
+
+                <!-- LinkedIn -->
+                <a  href="https://www.linkedin.com/in/michelle-chen-63a965216/">
+                    <img class="home-icon" src="images/linkedin-logo-png-2026.png" Alt="Image of LinkedIn Logo">
+                </a>
+                
+                <!-- GitHub -->
+                <a href="https://github.com/MicheC28">
+                    <img class="home-icon" src="images/github_logo.png" Alt="Image of GitHub Logo">
+                </a>
+                
+                <!-- Instagram -->
+                <a href="https://www.instagram.com/shashakookie28/">
+                    <img class="home-icon" src="images/instagram_logo.png" Alt="Image of Instagram logo outline">
+                </a>
+
             </div>
+
             
         </div>
 
+        <!-- VERTICLE LINE -->
         <div class="vl"></div>
 
+
+        <!-- EDUCATION -->
         <div class="section" id="education">
             <p class="subtitle3">Education</p>
-            <p class="para">
-                <span style="font-weight:bold; font-style:italic;">University of Waterloo </span>- Candidate for BASc in Computer Engineering 2023 - 2028 (Expected)
-            </p>
 
+            <!-- UWATERLOO CE -->
             <div class="textSection">
-                <p class="description" style="text-align: center; font-weight: bold; font-style: italic;margin-bottom:0px;">
+                <p></p>
+                <p class=" description description-centered">
+                    University of Waterloo - Candidate for BASc in Computer Engineering 2023 - 2028 (Expected)
+                </p>
+
+                <img src="images/UniversityOfWaterloo_logo_horiz_rev_rgb.png">
+
+            </div>
+            
+
+            
+
+            <!-- RELEVANT COURSEWORK -->
+            <div class="textSection">
+                <p class="description description-centered">
                     Relevant Coursework
                 </p>
 
                 <div id="coursework">
-                    <ul class="UL" style="width:300px">
-                        <p class="description" style="margin-bottom:0px; margin-top:0px; font-weight:bold;"> Completed</p>
-                        <li><span class="LIspan">
+
+                    <!-- COMPLETED COURSEWORK -->
+                    <ul class="UL coursework">
+                        <p class="description description-coursework">
+                            Completed
+                        </p>
+
+                        <li>
                             Fundamentals of Programming - C++
-                        </span></li>
+                        </li>
+
                     </ul>
 
                     <div id="coursework-split"></div>
 
-                    <ul class="UL" style="width:300px;">
-                        <p class="description" style="margin-bottom:0px; margin-top:0px;font-weight: bold;"> Current</p>
+                    <!-- CURRENT COURSEWORK -->
+                    <ul class="UL coursework">
+                        <p class="description description-coursework"> 
+                            Current
+                        </p>
                         
-                        <li><span class="LIspan">
+                        <li>
                             Discrete Math and Logic I
-                        </span></li>
+                        </li>
 
-                        <li><span class="LIspan">
+                        <li>
                             Linear Circuits
-                        </span></li>
+                        </li>
 
-                        <li><span class="LIspan">
+                        <li>
                             Digital Circuits and Systems - VHDL, FPGA Design
-                        </span></li>
+                        </li>
+
                     </ul>
 
                 </div>
+
             </div>
 
         </div>
 
+        <!-- VERTICLE LINE -->
         <div class="vl"></div>
         
+        <!-- SKILLS -->
         <div class="section">
-            <p class="subtitle3"> Skills</p>
+
+            <p class="subtitle3"> 
+                Skills
+            </p>
+
             <div class="textSection">
                 <div id="skills-list">
-                
+                    
+                    <!-- LEFT COLUMN: Language, Libraries -->
                     <ul class="UL">
-                        <li><span class="LIspan">
-                            <span style="font-weight:bold;">Languages</span>: C++, Python, HTML5, CSS3, JavaScript
-                        </span></li>
+                        <li>
+                            <b>Languages</b>: C++, Python, HTML5, CSS3, JavaScript
+                        </li>
 
-                        <li><span class="LIspan">
-                            <span style="font-weight:bold;">Libraries</span>: scikit-learn, pandas
-                        </span></li>
-
+                        <li>
+                            <b>Libraries</b>: scikit-learn, pandas
+                        </li>
                     </ul>
 
+                    <!-- RIGHT COLUMN: STM, VS, GitHub, MS Office -->
                     <ul class="UL">
-
-                        <li><span class="LIspan">
+                        <li>
                             STM32 Microcontroller
-                        </span></li>
+                        </li>
 
-                        <li><span class="LIspan">
+                        <li>
                             Visual Studio, Github, Mircosoft Office
-                        </span></li>
-
+                        </li>
                     </ul>
 
                 </div>
 
+                <!-- LANGUAGE LOGOS -->
+                <!-- C++ -->
+                <img src="images/cpp_logo.png" class="skills-icon" Alt="C++ logo">
+                
+                <!-- Python -->
+                <img src="images/python_logo.png" class="skills-icon" Alt="Python logo">
+                
+                <!-- HTML5 -->
+                <img src="images/html5_logo.png" class="skills-icon" Alt="HTML5 logo">
+                
+                <!-- CSS3 -->
+                <img src="images/css3_logo.png" class="skills-icon" Alt="CSS3 logo">
+                
+                <!-- JS -->
+                <img src="images/js_logo.png" class="skills-icon" Alt="js_logo">
 
             </div>
+
         </div>
 
+        <!-- VERTICLE LINE -->
         <div class="vl"></div>
 
+
+        <!-- AWARDS AND CERTIFICATIONS -->
         <div class="section">
-            <p class="subtitle3"> Awards and Certifications </p>
+            <p class="subtitle3"> 
+                Awards and Certifications 
+            </p>
             
-                <p class="para" style="text-align:center;"> I'm always looking for something new to learn!</p>
+            <p class="para para-centered"> I'm always looking for something new to learn!</p>
             
-                <div class="textSection">
+            <div class="textSection">
                 <div id="awards-cert">
+
+                    <!-- CERTIFICATIONS -->
                     <ul class="UL">
-                        <li><span class="LIspan">
-                            <span style="font-weight:bold;">Python</span>  Certificate - Kaggle 
-                        </span> </li>
+                        <li>
+                            <b>Python</b> Certificate - <i>Kaggle</i> 
+                        </li>
 
-                        <li><span class="LIspan">
-                            <span style="font-weight:bold">Intro the Machine Learning</span> Certificate - Kaggle 
-                        </span> </li>
+                        <li>
+                            <b>Intro the Machine Learning</b> Certificate - Kaggle 
+                        </li>
 
-                        <li><span class="LIspan">
-                            <span style="font-weight:bold">IBM Z Xplore</span> - Concepts Badge 
-                        </span> </li>
+                        <li>
+                            <b>Pandas</b> Certificate - Kaggle 
+                        </li>
 
-                        <li><span clas="LIspan">
-                            <span style="font-weight: bold;">Leadership</span> Certification - The Ripple Effect Education
-                        </span></li>
+                        <li>
+                            <b>IBM Z Xplore</b> - Concepts Badge 
+                        </li>
 
+                        <li>
+                            <b>Leadership Certification</b> - The Ripple Effect Education
+                        </li>
                     </ul>
 
+                    <!-- AWARDS -->
                     <ul class="UL">
-                        <li><span class="LIspan">
-                            <span style="font-weight:bold;">Governor General's Academic Medal</span> - Highest Graduating Average 
-                        </span> </li>
+                        <li>
+                            <b>Governor General's Academic Medal</b> - Highest Graduating Average 
+                        </li>
 
-                        <li><span class="LIspan"> 
-                            <span style="font-weight:bold;">Second Place Team 2021, 2022</span> - UWindsor Science Olympiad
-                        </span></li>
-
-
+                        <li>
+                            <b>Second Place Team 2021, 2022</b> - UWindsor Science Olympiad
+                        </li>
                     </ul>
-                </div>    
+
+
+                </div>  
             </div>
+
         </div>
 
+        <!-- VERTICLE LINE -->
         <div class="vl"></div>
 
-
+        <!-- PROJECTS -->
         <div class="section" id="Projects">
-            <p class="subtitle3">Projects</p>
+
+            <p class="subtitle3">
+                Projects
+            </p>
+
+            <!-- PROJECTS ACCORDION -->
             <div class="textSection">
                 <div id="accordion-container">
-                
+
                     <ul class="accordion">
+
+                        <!-- DIGITAL CLIPBOARD CHROME EXTENSION -->
                         <li>
-                            <img src="images/digitalClipboard.png">
+
+                            <img src="images/digitalClipboard.png" Alt="Screenshot of a Clipboard chrome extension.">
+
                             <div class="accordion-content">
                                 <span>
-                                    <p class="description" style="font-style:italic;font-weight:bold;margin-bottom:0px;font-size:100%; margin-top:0px;">
+
+                                    <!-- TITLE -->
+                                    <p class="description description-projectsAccordion-title" >
                                         Digital Clipboard Chrome Extension
                                     </p>
 
-                                    <p class="description" style="font-size:small; font-style: italic;margin-top:0px;">
+                                    <!-- SKILLS -->
+                                    <p class="description description-projectsAccordion-subtitle">
                                         HTML5, CSS, JavaScript | Dec 2023 - Jan 2024
                                     </p>
 
-                                    <button class="accordion-buttons" id="accordion-buttons-Clipboard">Learn More</button>
+                                    <!-- BUTTON -->
+                                    <button class="accordion-buttons" id="accordion-buttons-Clipboard">
+                                        Learn More
+                                    </button>
+
                                 </span>
                             </div>
+
                         </li>
+
+
+                        <!-- ALERTING MEDICATION CASE -->
                         <li>
-                            <img src="images/AlertCase1.png">
+
+                            <img src="images/AlertCase1.png" Alt="Screenshot of mechanical sketch of an electronically controlled medication case">
+
                             <div class="accordion-content">
                                 <span>
-                                    <p class="description" style="font-style:italic;font-weight:bold;margin-bottom:0px;font-size:100%; margin-top:0px;" >
+                                    <!-- TITLE -->
+                                    <p class="description description-projectsAccordion-title" >
                                         Alerting Medication Case
                                     </p>
-                                    <p class="description" style="font-size:small; font-style: italic; margin-top:0px;">
+
+                                    <!-- SKILLS -->
+                                    <p class="description description-projectsAccordion-subtitle">
                                         C++, STM32 Microcontroller, Github | Sept 2023 - Dec 2023
                                     </p>
 
-                                    <button class="accordion-buttons"  id="accordion-buttons-Medication">Learn More</button>
+                                    <!-- BUTTON -->
+                                    <button class="accordion-buttons"  id="accordion-buttons-Medication">
+                                        Learn More
+                                    </button>
+
                                 </span>
                             </div>
+
                         </li>
+
+                        <!-- PORTFOLIO -->
                         <li>
-                            <img src="images/headshot.jpg">
+                            <img src="images/PortfolioSite_1.png" Alt="Screenshot of Michelle Chen's portfolio site with a coding IDE on the left side.">
+
                             <div class="accordion-content">
                                 <span>
-                                    <p class="description" style="font-style:italic; font-weight: bold; margin-bottom:0px;">
-                                        Personal Portfolio Website</p>
-                                    <p class="description" style="font-size:small; font-style: italic; margin-top:0px;">
+                                    
+                                    <!-- TITLE -->
+                                    <p class="description description-projectsAccordion-title" >
+                                        Personal Portfolio Website
+                                    </p>
+
+                                    <!-- SKILLS -->
+                                    <p class="description description-projectsAccordion-subtitle">
                                         HTML5, CSS3, JavaScript, Netlify, Github | Jan 2024 - Present
                                     </p>
 
-                                    <button class="accordion-buttons"  id="accordion-buttons-Portfolio">Learn More</button>
+                                    <!-- BUTTON -->
+                                    <button class="accordion-buttons"  id="accordion-buttons-Portfolio">
+                                        Learn More
+                                    </button>
+
                                 </span>
                             </div>
+
                         </li>
+
+                        <!-- WINDSOR HOUSING MODEL -->
                         <li>
-                            <img src="images/windsor.jpeg">
+
+                            <img src="images/windsor.jpeg" Alt="image of Windsor, ON. A cityscape in Southeastern Ontario.">
+
                             <div class="accordion-content">
                                 <span>
-                                    <p class="description" style="font-style:italic;font-weight:bold;margin-bottom:0px;">Windsor Housing Pricing Prediction Model</p>
-                                    <p class="description" style="font-size:small; font-style: italic;margin-top:0px;">
+
+                                    <!-- TITLE -->
+                                    <p class="description description-projectsAccordion-title">
+                                        Windsor Housing Pricing Prediction Model
+                                    </p>
+
+                                    <!-- SKILLS -->
+                                    <p class="description description-projectsAccordion-subtitle">
                                         Python, Pandas, scikit-learn, Kaggle | Jan 2024
                                     </p>
 
-                                    <button  class="accordion-buttons"  id="accordion-buttons-Windsor">Learn More</button>
+                                    <!-- BUTTON -->
+                                    <button  class="accordion-buttons"  id="accordion-buttons-Windsor">
+                                        Learn More
+                                    </button>
+
                                 </span>
                             </div>
+
                         </li>
+
+
+                        <!-- RAINY RICHES -->
                         <li>
-                            <img src="images/RainyRiches.png">
+
+                            <img src="images/RainyRiches.png" Alt="Screen shot of the Rainy Riches homescreen. Blue geometric cityscape background with orange button and titles.">
+
                             <div class="accordion-content">
                                 <span>
-                                    <p class="description" style="font-style:italic;font-weight:bold;margin-bottom:0px;">Rainy Riches Game</p>
-                                    <p class="description" style="font-size:small; font-style: italic;margin-top:0px;">
-                                        Processing5 | July 2021
+
+                                    <!-- TITLE -->
+                                    <p class="description" style="font-style:italic;font-weight:bold;margin-bottom:0px;">
+                                        Rainy Riches Game
                                     </p>
 
-                                    <button class="accordion-buttons"  id="accordion-buttons-RR">Learn More</button>
+                                    <!-- SKILLS -->
+                                    <p class="description" style="font-size:small; font-style: italic;margin-top:0px;">
+                                        Processing5, PowerPoint | July 2021
+                                    </p>
+
+                                    <!-- BUTTON -->
+                                    <button class="accordion-buttons"  id="accordion-buttons-RR">
+                                        Learn More
+                                    </button>
+
                                 </span>
                             </div>
+
                         </li>
                     
-
 
                     </ul>
                 </div>
             </div>
         </div>
 
-
+        <!-- VERTICLE LINE -->
         <div class="vl"></div>
 
-        <div class="section">
-            <p class="subtitle3"> Work Experience</p>
-                <div id="Experiences-div">
-                    <div class="textSection">
-                        <p class="description" style="font-style:italic; font-weight:bold;margin-bottom:0px;"> Office and Social Media Assistant </p>
-                
-                        <p class="description" style="font-size:small; font-style:italic;margin-top:0px;">JingLian | Jul 2021 - Aug 2023</p>
-                        <ul class="UL">
-                            <li><span class="LIspan">Oversaw written and verbal correspondence with suppliers and partnering services.</span></li>
-                            <p></p>
-                            <li><span class="LIspan">
-                                Implemented a new catalogue system to keep track of inventory and prevent duplicate 
-                                purchases. The average search time for shortened from <span style="font-weight: bold">20 minutes</span> down to<span style="font-weight:bold;">1 minute</span> .
-                            </span></li>
-                            <p></p>
-                            <li><span class="LIspan">
-                                Managed <span style="font-weight:bold">4 social media accounts</span> . Filmed, edited, and designed thumbnails for over <span style="font-weight:bold">10 videos</span> and <span style="font-weight:bold">15 posts</span>.
-                            </span></li>
-                            <p></p>
-                            <li><span class="LIspan">
-                                Recorded and edited interviews using RiversideFM, Wondershare Filmora, and Canva.
-                            </span></li>
-                            <p></p>
-                            <li><span class="LIspan">
-                                Automated seminar registration using Google Forms and Zapier.
-                            </span></li>
-                        </ul>
 
-                    </div>
-                </div>        
+        <!-- WORK EXPERIENCE -->
+        <div class="section">
+
+            <p class="subtitle3"> 
+                Work Experience
+            </p>
+            
+            <div id="Experiences-div">
+                <div class="textSection">
+
+                    <!-- POSITION -->
+                     <p class="description description-workExperiences-title">
+                        Office and Social Media Assistant 
+                    </p>
+
+                    <!-- DURATION -->
+                    <p class="description description-workExperiences-subtitle">
+                        JingLian | Jul 2021 - Aug 2023
+                    </p>
+
+                    <!-- TASKS -->
+                    <ul class="UL">
+                        <li>
+                            Oversaw written and verbal correspondence with suppliers and partnering services.
+                        </li>
+
+                        <p></p>
+
+                        <li>
+                            Implemented a new catalogue system to keep track of inventory and prevent duplicate 
+                            purchases. The average search time for shortened from <b>20 minutes</b> down to<b>1 minute</b>.
+                        </li>
+
+                        <p></p>
+
+                        <li>
+                            Managed <b>4 social media accounts</b>. Filmed, edited, and designed thumbnails for over <b>10 videos</b> and <b>15 posts</b>.
+                        </li>
+
+                        <p></p>
+
+                        <li>
+                            Recorded and edited interviews using RiversideFM, Wondershare Filmora, and Canva.
+                        </li>
+
+                        <p></p>
+
+                        <li>
+                            Automated seminar registration using Google Forms and Zapier.
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>        
         </div>
 
         <div class="headspace"></div>
+
+        <!-- PROJECTS ACCORDION BUTTONS SCRIPT -->
         <script src="home_accordion_buttons.js"></script>
     </body>
 
+    <!-- GENERAL SCRIPT -->
     <script src="script.js"></script>
  
 </head>

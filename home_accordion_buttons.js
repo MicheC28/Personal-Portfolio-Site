@@ -1,4 +1,4 @@
-let projectButton_Clipboard = document.getElementById("accordion-buttons-Clipboard");
+  let projectButton_Clipboard = document.getElementById("accordion-buttons-Clipboard");
 let projectButton_Medication = document.getElementById("accordion-buttons-Medication");
 let projectButton_Portfolio = document.getElementById("accordion-buttons-Portfolio");
 let projectButton_Windsor = document.getElementById("accordion-buttons-Windsor");

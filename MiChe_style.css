@@ -1,0 +1,278 @@
+/* GENERAL SECTIONS  */
+.body{
+    min-width: 2000px;
+}
+
+hr{
+    margin-left:5%;
+    margin-right:5%;
+    background-color:#9CC5A1;
+    border:none;
+    height:4px;
+    
+}
+
+
+/* MICHE HOMEPAGE SPECIFIC STYLES */
+
+/* MICHE LOGO AND INTRO STYLING */
+#MiChe_logo{
+    max-width: 100px;
+    max-height:100px;
+    
+}
+
+.MiChe_logo_small{
+    max-width:70px;
+    max-height:70px;
+}
+
+#MiChe_intro_section{
+    margin-left:30%;
+    margin-right:30%;
+    background:#103434;
+}
+
+#MiChe_intro_wrapper{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    margin:20px;
+
+}
+
+#MiChe_title_wrapper{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#MiChe_title{
+    font-size:50px;
+    border-radius:25px;
+    text-align:left;
+    transition:0.3s;
+    animation-name: name;
+    animation-duration:4s;
+    animation-iteration-count: infinite;
+
+}
+
+
+/* HOMEPAGE: TABLE OF CONTENTS STYLING  */
+.TOF-organizer{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.TOF-organizer div{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.TOF-organizer-img{
+    text-align:center;
+    text-wrap:wrap();
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.TOF-organizer-img img{
+    /* display:block;
+    margin-left:auto;
+    margin-right:auto; */
+    
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    
+    width:200px;
+    height:auto;
+    
+    border:2px solid #b0c5b8;
+    transition:0.3s;
+}
+
+
+
+
+/* IMAGE GALLERY STYLING */
+.scroll-container {
+    background-color: #9CC5A1;
+    overflow: scroll;
+    white-space: nowrap;
+    padding: 20px;
+    text-align:center;
+    margin-left:5%;
+    margin-right:5%;
+    /* border-radius:25px; */
+    display:flex;
+    border: 8px solid #9CC5A1;
+    
+  }
+
+.scroll-container{
+    scrollbar-color: #9CC5A1 #103434;
+}
+
+  
+.gallery-wrapper{
+    margin:none;
+    padding:none;
+    min-width:400px;
+    background:#103434;
+    border:2px solid black;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    text-shadow:0 0 5 black;
+    
+}
+
+  div.scroll-container img {
+    padding: 10px;
+    width:95%;
+
+  }
+
+
+
+/* TEXT STYLING  */
+.MiChe-artwork-details{
+    color:#b0c5b8;
+    font-family: "OpenSans";
+    margin-top:none;
+    font-style:italic;
+    font-size:smaller;
+}
+
+.subtitle2-miche{
+    font-family:"Playfaire";
+    font-size:larger;
+}
+
+.subtitle3-miche-100px{
+    font-size:100px;
+}
+
+.description-miche{
+    font-family:"Playfaire";
+    font-style: italic;
+    text-align: center;
+}
+
+
+.section-miche{
+    background:#103434;
+}
+
+.MiChe-description{
+    margin-left:5%;
+    margin-right:5%;
+    
+}
+
+
+/* BUTTON STYLING */
+.MiChe-button{
+    width:50px;
+    display:flex;
+    justify-content: center;
+
+    padding: 15px 60px;
+    text-wrap: nowrap;
+
+    background:#103434;
+    font-family: "Playfaire";
+    font-weight:bold;
+    color:#b0c5b8;
+    border:2px solid #b0c5b8;
+    border-radius:15px;
+    transition:0.3s;
+}
+
+.MiChe-button:hover{
+    background:#eb9bad;
+    border:2px solid #eb9bad;
+    transition: 0.3s;
+    color:#DCE1DE;
+    text-shadow: 0px 0px 5px #103434;
+
+}
+
+
+/* HOMEPAGE: COLLECTION TOF  */
+.collection-intro{
+    border:2px solid #b0c5b8;
+    border-radius:25px;
+    margin-left:7%;
+    margin-right:7%;
+    padding:10px;
+    background:#103434;
+    transition:0.3s;
+}
+
+.collection-intro:hover{
+    background: rgb(0,0,0,0.25);
+    transition:0.3s;
+    border:2px solid #eb9bad;
+
+    .TOF-organizer-img img{
+        border:2px solid #eb9bad;
+        transition:0.3s;
+    }
+
+    .MiChe-button{
+        border:2px solid #eb9bad;
+        color:#eb9bad;
+    }
+
+    .MiChe-button:hover{
+        background:#eb9bad;
+        border:2px solid #103434;
+        transition: 0.3s;
+        color:#DCE1DE;
+        text-shadow: 0px 0px 5px #103434;
+    
+    }
+}
+
+
+
+/* COLLECTION PAGES */
+.section-miche-collections-intro{
+    margin-left:20%;
+    margin-right:20%;
+
+    padding: 10px 0px;
+}
+
+.MiChe_collections_intro_wrapper{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+
+
+/* IMAGE STYLING  */
+.MiChe_Individuals_Img{
+    border:8px solid #9CC5A1;
+}
+
+.MiChe_Individuals_Wrapper{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}

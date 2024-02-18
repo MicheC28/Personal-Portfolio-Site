@@ -1,245 +1,443 @@
 <!DOCTYPE html>
 
 <head>
+    <!-- IMPORT CSS: STYLE.CSS -->
     <link rel="stylesheet" href="style.css">
 
 <body onload="scrollFunction()">
 
-    <!-- Nav Bar-->
+    <!-- NAVIGATION BAR -->
     <nav class="nav-contrainer" id="navbar">
-        <p class="subtitle3" id="logo"><span style="color:#eb9bad;">//</span>mc</p>
+        
+         <!-- // LOGO -->
+        <p class="subtitle3" id="logo">
+            <span class="logo_pink">//</span>mc
+        </p>
 
+        
         <ul id="nav-bar-links">
-            <li><a id="nav-homepage"> home</a></li>
-            <li> <a id="nav-projects">projects</a></li>
-            <li> <a id="nav-MiChe"> MiChe </a></li>
-            <li> <a id="nav-contact" href="mailto:m89chen@uwaterloo.ca">contact me!</a></li>
+
+            <!-- NAV: HOMEPAGE -->
+            <li>
+                <a  id="nav-homepage"> 
+                    home
+                </a>
+            </li>
+
+            <!-- NAV: PROJECTS -->
+            <li>
+                <a id="nav-projects">
+                    projects
+                </a>
+
+                <!-- DROPDOWN MENU -->
+                <div class="dropdown-content-wrapper">
+                    
+                    <!--PROJECTS DROPDOWN: HOMEPAGE -->
+                    <div class="dropdown-content">
+                        <a id="nav-projects-projectsHomepage">
+                            projects homepage
+                        </a>
+                    </div>
+                    
+                    <!-- PROJECTS DROPDOWN: IDEAS -->
+                    <div class="dropdown-content">
+                        <a id="nav-projects-ideas">
+                            an unnecessary list of project ideas
+                        </a>
+                    </div>
+                    
+                    <!-- PROJECTS DROPDOWN: NOTES -->
+                    <div class="dropdown-content">
+                        <a id="nav-projects-notes">
+                            notes
+                        </a>
+                    </div>
+
+                </div>
+            
+            </li>
+
+
+            <!--NAV: MICHE COLLECTION -->
+            <li class="drowdown-li">
+                 
+                <!-- HOMEPAGE -->
+                <a id="nav-MiChe"> 
+                    MiChe 
+                </a>
+
+                <!-- DROPDOWN -->
+                <div class="dropdown-content-wrapper">
+                    <!-- MICHE DROPDOWN: HOMEPAGE -->
+                    <div class="dropdown-content">
+                        <a id="nav-MiChe-Homepage">
+                            MiChe homepage
+                        </a>
+                    </div>
+                    
+                    <!-- MICHE DROPDOWN: MINIS COLLECTION -->
+                    <div class="dropdown-content">
+                        <a id = "nav-MiChe-Minis">
+                            Minis Collection
+                        </a>
+                    </div>
+                    
+                    <!-- MICHE DROPDOWN: ITERATION 1 COLLECTION -->
+                    <div class="dropdown-content">
+                        <a id="nav-MiChe-Iteration1">
+                            Iteration 1 Collection
+                        </a>
+                    </div>
+                    
+                    <!-- MICHE DROPDOWN: INDIVIDUAL PIECES -->
+                    <div class="dropdown-content">
+                        <a id="nav-MiChe-Individuals">
+                            Individual Pieces
+                        </a>
+                    </div>
+
+                </div>
+                
+            </li>
+
+            <!-- NAV BAR: CONTACT (mailto) -->
+            <li>
+                <a id="nav-contact" href="mailto:m89chen@uwaterloo.ca">
+                    contact me!
+                </a>
+            </li>
+
+            
         </ul>
 
     </nav>
 
+    <!-- SPACING -->
     <div class="headspace"></div>
     <div class="headspace"></div>
 
 
-
+    <!-- PERSONAL PROJECTS TITLE SECTION  -->
     <div class="section">
-        <p class="subtitle3">Personal Projects</p>
+    
+        <!-- TITLE -->
+        <p class="subtitle3">
+            Personal Projects
+        </p>
+
+        <!-- SHORT INTRO -->
         <div class="textSection">
-            <p class="description" style="text-align: center;">In my spare time I like to work on building cool things. Check them out!</p>
+            <p class="description description-centerted-intro">
+                In my spare time I like to work on building cool things. Check them out!
+            </p>
         </div>
 
+        <!-- VERTICLE LINE -->
         <div class="vl-2"></div>
         <div class="vl-2"></div>
 
-
+        <!-- PROJECTS SECTION -->
         <div class="textSection">
             <div>
 
-
+                <!-- PROJECT: DIGITAL CLIPBOARD CHROME EXTENSION  -->
                 <div class="projects-content-div">
 
+                    <!-- DIGITAL CLIPBOARD: TEXT PORTION (TITLE, SKILLS, DESCRIPTION/TASKS)  -->
                     <div class="projects-text-div">
-                        <p class="description" style="font-style:italic;font-weight:bold;margin-bottom:0px;" id="projects-Clipboard">Digital
-                            Clipboard Chrome Extension
+                        
+                        <!-- DIGITAL CLIPBOARD: TITLE  -->
+                        <p class="description description-playfaire">
+                            Digital Clipboard Chrome Extension
                         </p>
 
-                        <p class="description" style="font-size:small; font-style: italic;margin-top:0px;">
+                        <!-- DIGITAL CLIPBOARD: SKILLS  -->
+                        <p class="description description-details">
                             HTML5, CSS, JavaScript | Dec 2023 - Jan 2024
                         </p>
 
-                    
+                        <!-- DIGITAL CLIPBOARD: DESCRIPTION/TASKS  -->
                         <ul class="UL">
-                            <li><span class="LIspan">
-                                    Created a Chrome extension that allows users to keep track of important sites.
-                                </span></li>
+                            
+                            <li>
+                                Created a Chrome extension that allows users to keep track of important sites.
+                            </li>
+                            
                             <p></p>
-                            <li><span class="LIspan">
+                            
+                            <li>
                                     Used HTML5 and CSS3 to create an intuitive user interface as well as a JavaScript
-                                    program
-                                    that notes down the URL of the current tab with the click of a button.
-                                </span></li>
+                                    program that notes down the URL of the current tab with the click of a button.
+                            </li>
+                            
                             <p></p>
-                            <li><span class="LIspan">
+                            
+                            <li>
                                     Key aspects include the use of DOM to take input from HTML elements, the use of
-                                    arrays to
-                                    store URLs and sidenotes, and manipulation of the browser's local storage
-                                </span></li>
+                                    arrays to store URLs and sidenotes, and manipulation of the browser's local storage.
+                            </li>
 
                         </ul>
+
                     </div>
 
+                    <!-- PROJECT IMAGES: SCREENSHOT OF CHROME EXTENSION-->
                     <div class="projects-pic-div">
-                        <img src="images/digitalClipboardDemo12.png">
+                        <img src="images/digitalClipboardDemo12.png" Alt="Screen of a digital clipboard chrome extension. Designed to mimic a clipboard wtih 2 URLs noted down.">
                     </div>
                 </div>
-
-                <a href="https://github.com/MicheC28/Online-Clipboard"><img class="projects-icon" src="images/github_logo.png"></a>
+                
+                <!-- DIGITAL CLIPBOARD: LINK TO GITHUB REPO -->
+                <a href="https://github.com/MicheC28/Online-Clipboard">
+                    <img class="projects-icon" src="images/github_logo.png">
+                </a>
 
             </div>
         </div>
+
+        <!-- ANCHOR FOR ALERTING MEDICATION CASE PROJECT  -->
         <div class="anchor" id="projects-Medication"></div>
 
+        <!-- VERTICLE LINES -->
         <div class="vl-2"></div>
         <div class="vl-2"></div>
 
+        <!-- PROJECT: ALERTING MEDICATION CASE  -->
         <div>
             <div class="textSection">
+
+                <!-- MED CASE: TEXT PORTION (TITLE, SKILLS, DESCRIPTION/TASKS) -->
                 <div class="projects-text-div">
-                    <p class="description" style="font-style:italic; font-weight: bold; margin-bottom:0px;">Alerting
-                        Medication Case</p>
-                    <p class="description" style="font-size:small; font-style: italic; margin-top:0px;">
+                    
+                    <!-- MED CASE: TITLE  -->
+                    <p class="description description-playfaire" >
+                        Alerting Medication Case
+                    </p>
+
+                    <!-- MED CASE: SKILLS  -->
+                    <p class="description description-details">
                         C++, STM32-NucleoF401RE Microcontroller, Github | Sept 2023 - Dec 2023
                     </p>
+
+                    <!-- MED CASE: DESCRIPTION/TASKS   -->
                     <ul class="UL">
-                        <li><span class="LIspan">
-                                Worked in a team to design and build a medication case with built-in auditory and visual
-                                alerts.
-                            </span></li>
+                        
+                        <li>
+                            Collaborated in a team to design and build a medication case with built-in auditory and visual alerts.
+                        </li>
+                        
                         <p></p>
-                        <li><span class="LIspan">
-                                Developed and implemented an electronically controlled locking system for the case.
-                            </span></li>
+                        
+                        <li>
+                            Developed and implemented an electronically controlled locking system for the case.
+                        </li>
+                        
                         <p></p>
-                        <li><span class="LIspan">
-                                Designed, implemented, and tested C++ programs to trigger and run alerts and the locking
-                                mechanism. Programs controlled LEDs, piezos, servo motors, and limit switches.
-                            </span></li>
+                        
+                        <li>
+                            Designed, implemented, and tested C++ programs to trigger and run alerts and the locking
+                            mechanism. Programs controlled LEDs, piezos, servo motors, and limit switches.
+                        </li>
+                        
                         <p></p>
-                        <li><span class="LIspan">
-                                Managed an online Trello Kanban board and shared Google Calendar to designate tasks and
-                                coordinate meetings with fellow team members.
-                            </span></li>
+                        
+                        <li>
+                            Managed an online Trello Kanban board and shared Google Calendar to designate tasks and
+                            coordinate meetings with fellow team members.
+                        </li>
+
                     </ul>
+
                 </div>
 
+                <!-- MED CASE: PROJECT IMAGES  -->
                 <div class="projects-pic-div">
+
+                    <!-- MECHANICAL SKETCH FROM SIDE  -->
                     <img src="images/AlertCase1.png">
+                    <!-- MECHANICAL SKETCH FROM OUTSIDE  -->
                     <img src="images/AlertCase2.png">
+                    
                 </div>
+
             </div>
 
+            <!-- GITHUB NOT UP YET   -->
             <!-- <a href="https://github.com/MicheC28/"><img class="projects-icon" src="images/github_logo.png" style="width:50px;"></a> -->
 
         </div>
+
+        <!-- ANCHOR FOR PORTFOLIO SITE  -->
         <div class="anchor" id="projects-Portfolio"></div>
 
+        <!-- VERTICLE LINES -->
         <div class="vl-2"></div>
         <div class="vl-2"></div>
 
+        <!-- PROJECT: PERSONAL PORTFOLIO SITE  -->
         <div>
+
+            <!-- PORTFOLIO: TEXT PORTION (TITLE, SKILLS, DESCRIPTION/TASKS) -->
             <div class="textSection">
                 <div class="projects-content-div">
                     <div class="projects-text-div">
-                        <p class="description" style="font-style:italic; font-weight: bold; margin-bottom:0px;">Personal
-                            Portfolio Website</p>
-                        <p class="description" style="font-size:small; font-style: italic; margin-top:0px;">
+
+                        <!-- PORTFOLIO: TITLE  -->
+                        <p class="description description-playfaire" >
+                            Personal Portfolio Website
+                        </p>
+
+                        <!-- PORTFOLO: SKILLS  -->
+                        <p class="description description-details" >
                             HTML5, CSS3, JavaScript, Netlify, Github | Jan 2024 - Present
                         </p>
+
+                        <!-- PORTFOLIO: DESCRIPTION/TASKS  -->
                         <ul class="UL">
-                            <li><span class="LIspan">
-                                    Designed and built a personal portfolio site using HTML5, CSS3, and JavaSript to display
-                                    projects and skills.
-                                </span></li>
+                            <li>
+                                Designed and built a personal portfolio site using HTML5, CSS3, and JavaSript to display
+                                projects and skills.
+                            </li>
                             <p></p>
-                            <li><span class="LIspan">
-                                    Includes changing colour on hover, clickable icons, and navigation bar.
-                                </span></li>
+
+                            <li>
+                                Includes changing colour on hover, clickable icons, and navigation bar.
+                            </li>
                             <p></p>
-                            <li><span class="LIspan">
-                                    Implemented a dynamic background with JavaScript animations.
-                                </span></li>
+
+                            <li>
+                                Implemented a dynamic background with JavaScript animations.
+                            </li>
                             <p></p>
-                            <li><span class="LIspan">
-                                    Deployed using Netlify.
-                                </span></li>
+
+                            <li>
+                                Deployed using Netlify.
+                            </li>
                         </ul>
                     </div>
 
+                    <!-- PROJECT IMAGES: IDE SCREENSHOT W/ PREVIEW -->
                     <div class="projects-pic-div">
                         <img src="images/PortfolioSite_1.png">
                     </div>
+
                 </div>
 
+                <!-- PORTFOLIO: LINK TO GITHUB REPO  -->
                 <a href="https://github.com/MicheC28/Personal-Portfolio-Site"><img class="projects-icon" src="images/github_logo.png" ></a>
 
             </div>
+
         </div>
+
+        <!-- ANCHOR FOR WINDSOR HOUSING PREDICTION MODEL  -->
         <div class="anchor" id="projects-Windsor"></div>
 
+        <!-- VERTICLE LINES  -->
         <div class="vl-2"></div>
         <div class="vl-2"></div>
 
+        <!-- PROJECT: WINDSOR HOUSING PREDICTION MODEL  -->
         <div>
+            <!-- WINDSOR MODEL: TEXT PORTION (TITLE, SKILLS, DESCRIPTION/TASKS) -->
             <div class="textSection">
-                <p class="description" style="font-style:italic;font-weight:bold;margin-bottom:0px;" id="projects-Windsor">Windsor Housing
-                    Pricing Prediction Model</p>
-                <p class="description" style="font-size:small; font-style: italic;margin-top:0px;">
+                <p class="description description-playfaire" id="projects-Windsor">
+                    Windsor Housing Pricing Prediction Model
+                </p>
+                
+                <!-- WINDSOR MODEL: SKILLS  -->
+                <p class="description description-details">
                     Python, Pandas, scikit-learn, Kaggle | Jan 2024
                 </p>
+
+                <!-- WINDSOR MODEL: DESCRIPTION/TASKS  -->
                 <ul class="UL">
-                    <li><span class="LIspan">
-                            Trained a Random Forest Regression and Linear Regression machine learning models using
-                            Pandas and Scikit-learn libraries to predict Windsor housing prices given its attributes
-                            with an MAE of <b>$14,000</b>.
-                        </span></li>
+                    <li>
+                        Trained a Random Forest Regression and Linear Regression machine learning models using
+                        Pandas and Scikit-learn libraries to predict Windsor housing prices given its attributes
+                        with an MAE of <b>$14,000</b>.
+                        
                     <p></p>
-                    <li><span class="LIspan">
-                            Used Panads to read data in a CSV file into a DataFrame.
-                        </span></li>
+
+
+                    <li>
+                        Used Panads to read data in a CSV file into a DataFrame.
+                    </li>
                     <p></p>
-                    <li><span class="LIspan">
-                            Split over <b>500</b> data entries into training and validation data.
-                        </span></li>
+                    
+                    <li>
+                        Split over <b>500</b> data entries into training and validation data.
+                    </li>
                 </ul>
 
+                <!-- WINDSOR MODEL: LINK TO GITHUB REPO -->
                 <a href="https://github.com/MicheC28/Windsor-Housing-Predictor"><img class="projects-icon" src="images/github_logo.png"></a>
 
             </div>
         </div>
         
+        <!-- ANCHOR FOR RAINY RICHES GAME  -->
         <div class="anchor" id="projects-RR"></div>
 
+        <!-- VERTICLE LINES  -->
         <div class="vl-2"></div>
         <div class="vl-2"></div>
 
+        <!-- PROJECT: RAINY RICHES GAME  -->
         <div>
+
+            <!-- RAINY RICHES: TEXT PORTION (TITLE, SKILLS, DESCRIPTION/TASKS) -->
             <div class="textSection">
                 <div class="projects-content-div">
                     <div class="projects-text-div">
-                        <p class="description" style="font-style:italic; font-weight: bold; margin-bottom:0px;">
-                            Rainy Riches Game</p>
-                        <p class="description" style="font-size:small; font-style: italic; margin-top:0px;">
+
+                        <!-- RAINY RICHES: TITLE -->
+                        <p class="description description-playfaire">
+                            Rainy Riches Game
+                        </p>
+
+                        <!-- RAINY RICHES: SKILLS  -->
+                        <p class="description description-details" >
                             Processing4 | Jul 2021
                         </p>
+
+                        <!-- RAINY RICHES: DESCRIPTION/SKILLS  -->
                         <ul class="UL">
-                            <li><span class="LIspan">
+                            <li>
                                 Developed a video Game in Processing4 where players control a wheeled box to catch falling bills.
-                                </span></li>
+                            </li>
                             <p></p>
-                            <li><span class="LIspan">
+
+                            <li>
                                 Utilized Pvectors for acceleration, jetpack propulsion, and gravity of the player.
-                                </span></li>
+                            </li>
                             <p></p>
-                            <li><span class="LIspan">
+                            
+                            <li>
                                 Created classes for Players and Bills with methods for display, updating, and collision detection.
-                                </span></li>
+                            </li>
                             <p></p>
-                            <li><span class="LIspan">
-                                Added a 60-second timer by iterating keyframes to track elapsed time.
-                                </span></li>
+
+                            <li>
+                                Implemented a 60-second timer by iterating keyframes to track elapsed time.
+                            </li>
                             <p></p>
-                            <li><span class="LIspan">
+
+                            <li>
                                 Presented the finished game and received a score of 100.
-                            </span></li>
+                            </li>
                         </ul>
                     </div>
 
+                    <!-- PROJECT IMAGES: RAINY RICHES HOMESCREEN -->
                     <div class="projects-pic-div">
                         <img src="images/RainyRiches.png">
                     </div>
+
                 </div>
 
+                <!-- RAINY RICHES: LINK TO GITHUB REPO-->
                 <a href="https://github.com/MicheC28/RainyRiches"><img class="projects-icon" src="images/github_logo.png"></a>
 
             </div>
@@ -250,32 +448,41 @@
 
     <div class="headspace"></div>
 
+    <!-- PROJECT LIST IDEAS SECTION  -->
     <div class="section">
+
         <p class="subtitle3">
             Project Ideas List
         </p>
 
+        <!-- SHORT INTRO  -->
         <div class="textSection">
             <p class="description">
                 When random ideas come to mind they are normally one of two thing: reasonable and not reasonable. Here's a list of them anyway. 
             </p>
         </div>
 
+        <!-- LIST OF IDEAS  -->
+        <!-- CONTROLLED USING project_ideas.js  -->
+        <!-- ADD IDEAS VIA project_ideas.js  -->
 
         <div class="project-ideas-ctn" id="project_ideas">
             <div class="projects-ideas-cardDisplay">
                 Coming Soon!
             </div>
-            
         </div>
         
-        
-
 
     </div>
 
+    <div class="headspace"></div>
+
+
+    <!-- IMPORT SCRIPT FOR PROJECT IDEAS LIST  -->
     <script src="project_ideas.js"></script>
 </body>
 
+<!-- IMPORT GENERAL SCRIPT.JS  -->
 <script src="script.js"></script>
+
 </head>
