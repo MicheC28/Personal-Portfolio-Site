@@ -3,6 +3,10 @@
     <!-- Import CSS -->
     <link rel="stylesheet" href="style.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&display=swap" rel="stylesheet">
+
     <body onload = "scrollFunction()">
         
         <!-- Navigation Bar -->
@@ -23,15 +27,40 @@
 
                         <div class="dropdown-content">
                             <a id="nav-projects-projectsHomepage">
-                                projects homepage
+                                All Projects
                             </a>
                         </div>
+
+                        <!-- new -->
+                         <div class="dropdown-content">
+                            <a id="nav-projects-digitalClip">
+                                Digital Clipboard Chrome Extension
+                            </a>
+                         </div>
+
+                         <div class="dropdown-content">
+                            <a id="nav-projects-AlertMed">
+                                Alerting Medication Case
+                            </a>
+                         </div>
                         
-                        <div class="dropdown-content">
-                            <a id="nav-projects-ideas">
-                                an unnecessary list of project ideas
+                         <div class="dropdown-content">
+                            <a id="nav-projects-Portfolio">
+                                Personal Portfolio Site
                             </a>
-                        </div>
+                         </div>
+
+                         <div class="dropdown-content">
+                            <a id="nav-projects-Windsor">
+                                Windsor Housing Prediction Model
+                            </a>
+                         </div>
+
+                         <div class="dropdown-content">
+                            <a id="nav-projects-RainyRiches">
+                                Rainy Riches Game
+                            </a>
+                         </div>
                         
                         <div class="dropdown-content">
                             <a id="nav-projects-notes">
@@ -88,264 +117,138 @@
         </nav>
 
         <div class="headspace"></div>
+        <div class="headspace"></div>
 
 
         <!-- INTRO SECTION -->
 
-        <div class="section" id="intro">
+        
+        <!-- new intro  -->
 
-            <div id="bg">
+        <div class="sec">
+            <div id="intro_wrapper"  >
 
-                <p class="subtitle2" style="margin-top:10px;">Hello, I'm </p>
+                <!-- <p class="subtitle2" style="margin-top:10px;">Hello, I'm </p> -->
+                <img id="Headshot" src="images/headshot.noback.png" Alt="Image of Michelle Chen">
+
+                
                 <p class="NameTitle"> michelle chen</p>
-                <p class="subtitle2"> Computer Engineering Student @ UWaterloo</p>
+                <p class="subtitle2"> Computer Engineering Student @ UWaterloo <br><br></p>
                 
                 <!-- PROFILE PIC -->
-                <div class="image-wrapper">
+                <!-- <div class="image-wrapper">
                     <img id="Headshot" src="images/headshot.noback.png" Alt="Image of Michelle Chen">
-                </div>
+                </div> -->
 
-            </div>
-            
-        </div>
-         
-        <!-- VERTICLE LINE -->
-        <div class="vl"></div>
-
-        <!-- ABOUT ME  -->
-        <div class="section" id="about">
-            
-            <p class="subtitle3"> About me</p>
-            <p class="para"> 
-                <br>
-                I'm a passionate <b>Computer Engineering</b> student at the <b>University of Waterloo</b> with a keen interest developing software and hardward for further connecting the <b>physical and technolgical worlds</b>. 
-                <br><br>
-                I've worked with <b>web development</b>, <b>OOP languages</b>, and most recently, <b>machine learning</b>.
-                <br><br>
-                In my spare time, I love working on my personal projects, painting and eating good food.😊
-                <br><br>
-            </p>
-
-
-            <!-- ICONS (LinkedIn, GitHub, Insta) -->
-            <div id="icon-group">
-
-                <!-- LinkedIn -->
-                <a  href="https://www.linkedin.com/in/michelle-chen-63a965216/">
-                    <img class="home-icon" src="images/linkedin-logo-png-2026.png" Alt="Image of LinkedIn Logo">
-                </a>
                 
-                <!-- GitHub -->
-                <a href="https://github.com/MicheC28">
-                    <img class="home-icon" src="images/github_logo.png" Alt="Image of GitHub Logo">
-                </a>
                 
-                <!-- Instagram -->
-                <a href="https://www.instagram.com/shashakookie28/">
-                    <img class="home-icon" src="images/instagram_logo.png" Alt="Image of Instagram logo outline">
-                </a>
 
             </div>
 
-            
-        </div>
-
-        <!-- VERTICLE LINE -->
-        <div class="vl"></div>
-
-
-        <!-- EDUCATION -->
-        <div class="section" id="education">
-            <p class="subtitle3">Education</p>
-
-            <!-- UWATERLOO CE -->
-            <div class="textSection">
-                <p></p>
-                <p class=" description description-centered">
-                    University of Waterloo - Candidate for BASc in Computer Engineering 2023 - 2028 (Expected)
+            <div id="about-wrapper" style="width:60%; height:50%;">
+                <p class="subtitle3" style="text-align: center;"><span style="color:#eb9bad;">//</span>About me</p>
+                <p class="para" style="font-size: 15px; text-align: left;"> 
+                    <br>
+                    I'm a passionate <b>Computer Engineering</b> student at the <b>University of Waterloo</b>. I'm interested in designing software and hardware for applications that allow for better connection between the physical and technological world. 
+                    <br><br>
+                    I've worked with <b>web development</b>, <b>live data processing</b>, and <b>embedded development with STM32 and Arduino </b>.
+                    <br><br>
+                    In my spare time, I love working on my personal projects, painting and eating good food.😊
+                    <br><br>
                 </p>
 
-                <img src="images/UniversityOfWaterloo_logo_horiz_rev_rgb.png">
 
-            </div>
-            
+                <!-- ICONS (LinkedIn, GitHub, Insta) -->
+                <div id="icon_group">
 
-            
-
-            <!-- RELEVANT COURSEWORK -->
-            <div class="textSection">
-                <p class="description description-centered">
-                    Relevant Coursework
-                </p>
-
-                <div id="coursework">
-
-                    <!-- COMPLETED COURSEWORK -->
-                    <ul class="UL coursework">
-                        <p class="description description-coursework">
-                            Completed
-                        </p>
-
-                        <li>
-                            Fundamentals of Programming - C++
-                        </li>
-
-                    </ul>
-
-                    <div id="coursework-split"></div>
-
-                    <!-- CURRENT COURSEWORK -->
-                    <ul class="UL coursework">
-                        <p class="description description-coursework"> 
-                            Current
-                        </p>
-                        
-                        <li>
-                            Discrete Math and Logic I
-                        </li>
-
-                        <li>
-                            Linear Circuits
-                        </li>
-
-                        <li>
-                            Digital Circuits and Systems - VHDL, FPGA Design
-                        </li>
-
-                    </ul>
-
-                </div>
-
-            </div>
-
-        </div>
-
-        <!-- VERTICLE LINE -->
-        <div class="vl"></div>
-        
-        <!-- SKILLS -->
-        <div class="section">
-
-            <p class="subtitle3"> 
-                Skills
-            </p>
-
-            <div class="textSection">
-                <div id="skills-list">
+                    <!-- LinkedIn -->
+                    <a  href="https://www.linkedin.com/in/michelle-chen-63a965216/">
+                        <img class="home-icon" src="images/linkedin-logo-png-2026.png" Alt="Image of LinkedIn Logo">
+                    </a>
                     
-                    <!-- LEFT COLUMN: Language, Libraries -->
-                    <ul class="UL">
-                        <li>
-                            <b>Languages</b>: C++, Python, HTML5, CSS3, JavaScript
-                        </li>
-
-                        <li>
-                            <b>Libraries</b>: scikit-learn, pandas
-                        </li>
-                    </ul>
-
-                    <!-- RIGHT COLUMN: STM, VS, GitHub, MS Office -->
-                    <ul class="UL">
-                        <li>
-                            STM32 Microcontroller
-                        </li>
-
-                        <li>
-                            Visual Studio, Github, Mircosoft Office
-                        </li>
-                    </ul>
+                    <!-- GitHub -->
+                    <a href="https://github.com/MicheC28">
+                        <img class="home-icon" src="images/github_logo.png" Alt="Image of GitHub Logo">
+                    </a>
+                    
+                    <!-- Instagram -->
+                    <a href="https://www.instagram.com/shashakookie28/">
+                        <img class="home-icon" src="images/instagram_logo.png" Alt="Image of Instagram logo outline">
+                    </a>
 
                 </div>
-
-                <!-- LANGUAGE LOGOS -->
-                <!-- C++ -->
-                <img src="images/cpp_logo.png" class="skills-icon" Alt="C++ logo">
-                
-                <!-- Python -->
-                <img src="images/python_logo.png" class="skills-icon" Alt="Python logo">
-                
-                <!-- HTML5 -->
-                <img src="images/html5_logo.png" class="skills-icon" Alt="HTML5 logo">
-                
-                <!-- CSS3 -->
-                <img src="images/css3_logo.png" class="skills-icon" Alt="CSS3 logo">
-                
-                <!-- JS -->
-                <img src="images/js_logo.png" class="skills-icon" Alt="js_logo">
-
             </div>
-
         </div>
 
-        <!-- VERTICLE LINE -->
-        <div class="vl"></div>
+        <div class="headspace"></div>
 
-
-        <!-- AWARDS AND CERTIFICATIONS -->
-        <div class="section">
-            <p class="subtitle3"> 
-                Awards and Certifications 
-            </p>
-            
-            <p class="para para-centered"> I'm always looking for something new to learn!</p>
-            
-            <div class="textSection">
-                <div id="awards-cert">
-
-                    <!-- CERTIFICATIONS -->
-                    <ul class="UL">
-                        <li>
-                            <b>Python</b> Certificate - <i>Kaggle</i> 
-                        </li>
-
-                        <li>
-                            <b>Intro the Machine Learning</b> Certificate - Kaggle 
-                        </li>
-
-                        <li>
-                            <b>Pandas</b> Certificate - Kaggle 
-                        </li>
-
-                        <li>
-                            <b>IBM Z Xplore</b> - Concepts Badge 
-                        </li>
-
-                        <li>
-                            <b>Leadership Certification</b> - The Ripple Effect Education
-                        </li>
-                    </ul>
-
-                    <!-- AWARDS -->
-                    <ul class="UL">
-                        <li>
-                            <b>Governor General's Academic Medal</b> - Highest Graduating Average 
-                        </li>
-
-                        <li>
-                            <b>Second Place Team 2021, 2022</b> - UWindsor Science Olympiad
-                        </li>
-                    </ul>
-
-
-                </div>  
+        <div class="sec_1">
+            <div id="skills-wrapper">
+                <p class="subtitle4"> 
+                    <span style="color:#f5426c; font-weight:bold">//</span>Skills
+                </p>
+    
+                <div>
+                    <div id="skills-list">
+                        
+                        <!-- LEFT COLUMN: Language, Libraries -->
+                        <ul class="UL_dark">
+                            <li>
+                                <b>Languages</b>: C++, Python, HTML5, CSS3, JavaScript
+                            </li>
+    
+                            <li>
+                                <b>Libraries</b>: scikit-learn, pandas, Matplotlib, scipy
+                            </li>
+                        </ul>
+    
+                        <!-- RIGHT COLUMN: STM, VS, GitHub, MS Office -->
+                        <ul class="UL_dark">
+                            <li>
+                                <b>Embedded</b>: STM32, Arduino, I2C, ADC/DAC, DMA.
+                            </li>
+    
+                            <li>
+                                Visual Studio, STMCubeIDE, Github, Mircosoft Office
+                            </li>
+                        </ul>
+    
+                    </div>
+    
+                    <!-- LANGUAGE LOGOS -->
+                    <!-- C++ -->
+                    <img src="images/cpp_logo.png" class="skills-icon" Alt="C++ logo">
+                    
+                    <!-- Python -->
+                    <img src="images/python_logo.png" class="skills-icon" Alt="Python logo">
+                    
+                    <!-- HTML5 -->
+                    <img src="images/html5_logo.png" class="skills-icon" Alt="HTML5 logo">
+                    
+                    <!-- CSS3 -->
+                    <img src="images/css3_logo.png" class="skills-icon" Alt="CSS3 logo">
+                    
+                    <!-- JS -->
+                    <img src="images/js_logo.png" class="skills-icon" Alt="js_logo">
+    
+                </div>
             </div>
-
         </div>
 
-        <!-- VERTICLE LINE -->
-        <div class="vl"></div>
+        <div class="headspace"></div>
 
-        <!-- PROJECTS -->
-        <div class="section" id="Projects">
+        <!-- projects -->
+        <div>
+            
+            <div id="projects-wrapper">
+                <div class="headspace"></div>
+                <p class="subtitle3" style="text-align:center;">
+                    <span style="color:#eb9bad">//</span> My Projects
+                </p>
+                <div class="headspace"></div>
 
-            <p class="subtitle3">
-                Projects
-            </p>
 
-            <!-- PROJECTS ACCORDION -->
-            <div class="textSection">
                 <div id="accordion-container">
-
                     <ul class="accordion">
 
                         <!-- DIGITAL CLIPBOARD CHROME EXTENSION -->
@@ -363,7 +266,8 @@
 
                                     <!-- SKILLS -->
                                     <p class="description description-projectsAccordion-subtitle">
-                                        HTML5, CSS, JavaScript | Dec 2023 - Jan 2024
+                                        HTML5, CSS, JavaScript<br>
+                                        Dec 2023 - Jan 2024
                                     </p>
 
                                     <!-- BUTTON -->
@@ -391,7 +295,8 @@
 
                                     <!-- SKILLS -->
                                     <p class="description description-projectsAccordion-subtitle">
-                                        C++, STM32 Microcontroller, Github | Sept 2023 - Dec 2023
+                                        C++, STM32 Microcontroller, Github<br>
+                                        Sept 2023 - Dec 2023
                                     </p>
 
                                     <!-- BUTTON -->
@@ -418,7 +323,8 @@
 
                                     <!-- SKILLS -->
                                     <p class="description description-projectsAccordion-subtitle">
-                                        HTML5, CSS3, JavaScript, Netlify, Github | Jan 2024 - Present
+                                        HTML5, CSS3, JavaScript, Netlify, Github<br>
+                                        Jan 2024 - Present
                                     </p>
 
                                     <!-- BUTTON -->
@@ -441,12 +347,13 @@
 
                                     <!-- TITLE -->
                                     <p class="description description-projectsAccordion-title">
-                                        Windsor Housing Pricing Prediction Model
+                                        Windsor Housing Prediction Model
                                     </p>
 
                                     <!-- SKILLS -->
                                     <p class="description description-projectsAccordion-subtitle">
-                                        Python, Pandas, scikit-learn, Kaggle | Jan 2024
+                                        Python, Pandas, scikit-learn, Kaggle<br>
+                                        Jan 2024
                                     </p>
 
                                     <!-- BUTTON -->
@@ -468,20 +375,21 @@
                             <div class="accordion-content">
                                 <span>
 
-                                    <!-- TITLE -->
-                                    <p class="description" style="font-style:italic;font-weight:bold;margin-bottom:0px;">
-                                        Rainy Riches Game
-                                    </p>
+                                        <!-- TITLE -->
+                                        <p class="description" style="font-style:italic;font-weight:bold;margin-bottom:0px;">
+                                            Rainy Riches Game
+                                        </p>
 
-                                    <!-- SKILLS -->
-                                    <p class="description" style="font-size:small; font-style: italic;margin-top:0px;">
-                                        Processing5, PowerPoint | July 2021
-                                    </p>
+                                        <!-- SKILLS -->
+                                        <p class="description" style="font-size:small; font-style: italic;margin-top:0px;">
+                                            Processing5, PowerPoint<br>
+                                            July 2021
+                                        </p>
 
-                                    <!-- BUTTON -->
-                                    <button class="accordion-buttons"  id="accordion-buttons-RR">
-                                        Learn More
-                                    </button>
+                                        <!-- BUTTON -->
+                                        <button class="accordion-buttons"  id="accordion-buttons-RR">
+                                            Learn More
+                                        </button>
 
                                 </span>
                             </div>
@@ -491,77 +399,225 @@
 
                     </ul>
                 </div>
+
+                <div class="headspace"></div>
             </div>
-        </div>
-
-        <!-- VERTICLE LINE -->
-        <div class="vl"></div>
-
-
-        <!-- WORK EXPERIENCE -->
-        <div class="section">
-
-            <p class="subtitle3"> 
-                Work Experience
-            </p>
-            
-            <div id="Experiences-div">
-                <div class="textSection">
-
-                    <!-- POSITION -->
-                     <p class="description description-workExperiences-title">
-                        Office and Social Media Assistant 
-                    </p>
-
-                    <!-- DURATION -->
-                    <p class="description description-workExperiences-subtitle">
-                        JingLian | Jul 2021 - Aug 2023
-                    </p>
-
-                    <!-- TASKS -->
-                    <ul class="UL">
-                        <li>
-                            Oversaw written and verbal correspondence with suppliers and partnering services.
-                        </li>
-
-                        <p></p>
-
-                        <li>
-                            Implemented a new catalogue system to keep track of inventory and prevent duplicate 
-                            purchases. The average search time for shortened from <b>20 minutes</b> down to<b>1 minute</b>.
-                        </li>
-
-                        <p></p>
-
-                        <li>
-                            Managed <b>4 social media accounts</b>. Filmed, edited, and designed thumbnails for over <b>10 videos</b> and <b>15 posts</b>.
-                        </li>
-
-                        <p></p>
-
-                        <li>
-                            Recorded and edited interviews using RiversideFM, Wondershare Filmora, and Canva.
-                        </li>
-
-                        <p></p>
-
-                        <li>
-                            Automated seminar registration using Google Forms and Zapier.
-                        </li>
-
-                    </ul>
-
-                </div>
-            </div>        
         </div>
 
         <div class="headspace"></div>
 
+        <div id="work-wrapper" class="sec">
+
+            <div id="work-title" style="background:#9CC5A1; width:100%;">
+                <p class="subtitle4"> 
+                    <br>
+                    <span style="color:#f5426c; font-weight:bold;">//</span>Work Experience
+                    <br><br>
+                </p>
+            </div>
+
+            <div id="work-content-wrapper">
+                
+                
+                
+                <div style="display: flex; flex-direction: row;align-items: centered; padding:20px 0px; gap:20px; justify-content: center;">
+                    
+                    <!-- <div class="Experiences-div" style="background:#9CC5A1; width:15%;"></div> -->
+                    
+                    <div class="Experiences-div">
+                        <!-- POSITION  -->
+                        <p class=" description description-workExperiences-title"> Research Assistant </p>
+
+                        <!-- DURATION  -->
+                        <p class="description description-workExperiences-subtitle"> Pearl Sullivan Engineering IDEAs Clinic | May 2024 - Current
+                        </p>
+
+                        <!-- TASKS -->
+                        <ul class="UL">
+                            <li>
+                                Developed and integrated low-pass and moving average filters using Pandas and Matplotlib in Python to denoise to live sensor data. Reduce noise by 80%.
+                            </li>
+                            <br>
+                            <li>
+                                Created a microphone system using an STM32 microcontroller. Used on-board ADC to read in analog mic signal using DMA and on-board timer as well as transformed digital signal to anolog using external DAC with I2C protocol. 
+                            </li>
+                            <br>
+                            <li>
+                                Developed a complex sound generation activity for an Audio Engineering workshop using Pandas, Matplotlib, and Audiosegment.
+                            </li>
+                            <br>
+                            <li>
+                                Documented experimental procedure in a clear thorough manner for over 15 experiments. Processed over 900,000 data points analysis for finite element model training. 
+                            </li>
+                            <br>
+                            <li>
+                                As a member of the project management team, maintained thorough and organized documentation and storage of ongoing projects in Teams and Google Drive, wrote external communication including content for project webpages and event marketing as well as internal tools such as email and form templates.
+                            </li>
+                            <br>
+                            <li>
+                                Assembled and tested custom PCB synthesizers for the Audio Engineering Workshop.
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div class="Experiences-div">
+                            
+                        <!-- POSITION -->
+                        <p class="description description-workExperiences-title">
+                            Office and Social Media Assistant 
+                        </p>
+        
+                        <!-- DURATION -->
+                        <p class="description description-workExperiences-subtitle">
+                            JingLian | Jul 2021 - Aug 2023
+                        </p>
+        
+                        <!-- TASKS -->
+                        <ul class="UL">
+                            <li>
+                                Oversaw written and verbal correspondence with suppliers and partnering services.
+                            </li>
+        
+                            <br>
+        
+                            <li>
+                                Implemented a new catalog system to track inventory and prevent duplicate purchases, reducing average search time from 20 minutes to 1 minute.
+                            </li>
+        
+                            <br>
+        
+                            <li>
+                                Managed 4 social media accounts, filming, editing, and designing thumbnails for over 10 videos and 15 posts.
+                            </li>
+        
+                            <br>
+        
+                            <li>
+                                Recorded and edited interviews using RiversideFM, Wondershare Filmora, and Canva.
+                            </li>
+        
+                            <br>
+        
+                            <li>
+                                Automated seminar registration using Google Forms and Zapier.
+                            </li>
+        
+                        </ul>
+                        
+                    </div>
+
+                    <!-- <div class="Experiences-div" style="background:#9CC5A1; width:15%;"></div> -->
+
+                </div>
+            </div>
+        </div>
+
+        <div class="headspace"></div>
+
+        <div>
+            <div class="sec" id="edu-wrapper">
+                <div class="headspace"></div>
+                <p class="subtitle3"> 
+                    <span style="color:#eb9bad;">//</span>Education, Awards, and Certifications
+                </p>
+
+                <div class="headspace"></div>
+
+                <div id="edu-content-wrapper">
+                    <div style="width:50%;">
+
+                        <div style="width:90%;">
+                            <p class="subtitle1" style="font-family: 'Playfaire'; font-size:20px; "> <i>Candidate for BASc in Computer Engineering (2028)</i></p>
+                            <br>
+                            <div>
+                                <img src="images/UniversityOfWaterloo_logo_horiz_rev_rgb.png" style="border-radius:0px;">
+                            </div>
+                        
+                            
+                        </div>
+                    </div>
+
+                    <div style="width:50%;">
+                        <p class="subtitle1" style="font-family: 'Playfaire'; font-size:25px; font-weight:bold;">Relevent Coursework</p>
+
+                        <ul class="UL">
+                            <li>
+                                Fundamentals of Programming - C++
+                            </li>
+
+                            <li>
+                                Linear Circuits
+                            </li>
+
+                            <li>
+                                Digital Circuits and Systems - VHDL, FPGAs
+                            </li>
+                        </ul>
+
+                        <p class="subtitle1"><b> Cumulative Average:</b> 90.44/100 </p>
+
+                    </div>
+             </div>
+
+             <br>
+             <div class="hl"></div>
+             <br>
+
+             <!-- <p class="subtitle3">Awards and Certifications</p> -->
+                <div id="awards-cert-content-wrapper">
+                    <div style="width:50%;">
+                        <p class="subtitle1" style="font-family: 'Playfaire'; font-size:25px; font-weight: bold;"> Awards and Scholarships</p>
+                        <ul class="UL">
+                            <li>Governor General's Academic Medal - Highest Graduating Average</li>
+                            <li>2X Term Dean's Honours List</li>
+                            <li>2nd Place 2021 Science Olympiad Team - UWindsor</li>
+                            <li>2nd Place 2022 Science Olympiad Team - UWindsor</li>
+                        </ul>
+                    </div>
+
+                    <div style="width:50%;">
+                        <p class="subtitle1" style="font-family: 'Playfaire'; font-size:25px; font-weight:bold;">Certifications</p>
+                        <ul class="UL">
+                            <li>Python Certificate - Kaggle</li>
+                            <li>Intro to Machine Learning - Kaggle</li>
+                            <li>Pandas - Kaggle</li>
+                            <li>IBM Z Xplore Concepts Badge - IBM</li>
+                        </ul>
+                    </div>
+
+                    
+
+                </div>
+                <div class="headspace"></div>
+            </div>
+        </div>
+
+        <div class="headspace"></div>
+        
+
+        <footer>
+            <div id="footer" class="sec_1">
+                <!-- <p class="subtitle4"> Reach Out</p>
+                <a href="mailto.m89chen@uwaterloo.ca" style="text-decoration: none;"><p class="subtitle1_dark" >Contact</p></a>
+
+                <p class="subtitle4">Projects</p>
+                <p id="accordion-buttons-Medication"> test</p> -->
+
+                <marquee behavior="alternate" direction="left" scrollamount="10"><p class="subtitle4">LIVE LAUGH LOVE </p></marquee>
+                
+
+            </div>
+        </footer>
+
+        <div class="headspace"></div>
+    
         <!-- PROJECTS ACCORDION BUTTONS SCRIPT -->
         <script src="home_accordion_buttons.js"></script>
     </body>
 
     <!-- GENERAL SCRIPT -->
     <script src="script.js"></script>
+
  
 </head>

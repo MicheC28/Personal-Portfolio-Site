@@ -13,22 +13,22 @@ projectButton_Windsor.addEventListener('click', go_to_projects_page_Windsor);
 projectButton_RR.addEventListener('click', go_to_projects_page_RR); // fix this
 
 function go_to_projects_page_Clipboard(){
-  window.location.href='Projects-page.html';
+  window.location.href='Projects-page-DigitalClip.html';
 }
 
 function go_to_projects_page_Medication(){
-  window.location.href='Projects-page.html#projects-Medication';
+  window.location.href='Projects-page-AlertMed.html';
 }
 
 
 function go_to_projects_page_Portfolio(){
-  window.location.href='Projects-page.html#projects-Portfolio';
+  window.location.href='Projects-page-Portfolio.html';
 }
 
 function go_to_projects_page_Windsor(){
-  window.location.href='Projects-page.html#projects-Windsor';
+  window.location.href='Projects-page-WindsorHousing.html';
 }
 
 function go_to_projects_page_RR(){
-    window.location.href='Projects-page.html#projects-RR';
+    window.location.href='Projects-page-RainyRiches.html';
 }

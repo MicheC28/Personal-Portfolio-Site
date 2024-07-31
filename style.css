@@ -15,6 +15,10 @@
 
 }
 
+.html{
+    scroll-behavior: smooth;
+}
+
 .section:hover{
     transition:0.3s;
     border-color:#f5426c;
@@ -26,13 +30,128 @@
     margin-right:10%;
 }
 
-#about{
-    margin-left:10%;
-    margin-right:10%;
-    padding-left:0%;
-    padding-right:0%;
+#intro_wrapper{
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background:red; */
+    background:rgba(0,0,0,0.5);
+    margin:none;
+    padding:none;
+    min-height:450px;
+    width:50%;
+    /* height:100%; */
+
 }
 
+#about{
+    /* margin-left:10%;
+    margin-right:10%; */
+    padding-left:0%;
+    padding-right:0%;
+    /* not in use?  */
+}
+
+#about-wrapper{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin:none;
+    /* background:green; */
+    flex-grow:1;
+    /* height: */
+}
+
+#skills-wrapper{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-grow:1;
+}
+
+#projects-wrapper{
+    border:2px solid #9CC5A1;
+    background: rgb(0 0 0 / 50%);
+    margin:0 10%;
+    padding: 20px 0px;
+    gap:10px;
+    display:block;
+}
+
+#work-content-wrapper{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin:none;
+    flex-grow:1;
+    padding:0 10%;
+    /* padding: 0 20px; */
+
+}
+
+#work-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin:0px;
+}
+
+#work-title{
+    
+}
+
+#edu-wrapper{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+
+    border:2px solid #9CC5A1;
+    background: rgb(0 0 0 / 50%);
+    margin:20px 10%;
+}
+
+#edu-content-wrapper{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    gap:15px;
+    padding-bottom:15px;
+
+}
+
+#awards-cert-wrapper{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    background:rgb(0 0 0 / 50%);
+    border:2px solid #9CC5A1;
+    margin:20px;
+}
+
+#awards-cert-content-wrapper{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding-bottom:15px;
+}
 
 #coursework{
     padding-top:0px;
@@ -55,12 +174,62 @@
 
 
 body {
-    background: #d5e7e1;
+    /* background: #d5e7e1; */
+    background:#0e2e2e;
     min-width: 500px;
     position:relative;
-    height:100vh;   
-
+    height:100vh;  
+    margin:0;
+    
 }
+
+
+.sec{
+    /* background:#103434; */
+    padding:10px 0px;
+    margin:0 10%;
+    /* background:red; */
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    /* background:red; */
+    gap:10px;
+    
+    min-height:500px;
+    
+}
+
+.sec_1{
+    /* background:#216869; */
+    background:#9CC5A1;
+    padding:10px 0px;
+    display:flex;
+    justify-content: center;
+    /* margin:0 10%; */
+
+    
+}
+
+.sec_2{
+    background:rgb(0 0 0 / 70%);
+    padding:none;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#Headshot{
+    height:100%;
+    width: 100%;
+    border-radius:0;
+}
+/* 
+#intro_wrapper * {
+    display:flex;
+    justify-content: center;
+} */
 
 nav{
     background-color:#103434;
@@ -69,7 +238,7 @@ nav{
     position:fixed;
     top:-80px;
     width:100%;
-    margin-left:-10px;
+    /* margin-left:-10px; */
     /*transition: top 0.3s;*/
     justify-content: center;
     align-items: center;
@@ -82,23 +251,28 @@ nav{
 }
 
 .headspace{
-    height:50px;
+    height:60px;
 }
 
 .home-icon{
     margin:10px;
     width:70px;
+    height:70px;
     /* filter: opacity(0.5) drop-shadow(0 0 0 blue); */
     transition:0.3s;
-    border:2px solid #216869;
+    /* border:2px solid #216869; */
     padding:10px;
     border-radius:20px;
-    background:#216869;
+    /* background:rgb(0 0 0 / 70%); */
+    background:#9CC5A1;
+    border:2px solid #0e2e2e;
+    
 
 }
 
 .home-icon:hover{
-    border:2px solid #eb9bad;
+    /* border:2px solid #9CC5A1; */
+    background:#e6b1ca;
     transition:0.3s;
     /* background:#9CC5A1; */
 }
@@ -110,26 +284,29 @@ nav{
     justify-content: center;
     padding:10px;
     margin:10px;
+    
 }
 
 .projects-icon{
     margin:10px;
     width:40px;
     transition:0.3s;
-    border:2px solid #103434;
+    border:2px solid #9CC5A1;
     padding:10px;
     border-radius:20px;
-    background:#103434;
+    background:#9CC5A1;
 }
 
 .projects-icon:hover{
     margin:10px;
     width:40px;
     transition:0.3s;
-    border:2px solid #eb9bad;
+    /* border:2px solid #eb9bad; */
+    border: 2px solid #e6b1ca;
+    
     padding:10px;
     border-radius:20px;
-    background:#103434;
+    background:#e6b1ca;
 }
 
 #logo{
@@ -271,7 +448,13 @@ nav li a:hover, .dropdown-content-wrapper:hover{
 .subtitle1{
     color:#DCE1DE;
     margin-bottom:0px;
-    font-family:"OpenSans"
+    font-family:"typewritter";
+}
+
+.subtitle1_dark{
+    color:#0e2e2e;
+    margin-bottom:0px;
+    font-family: "typewritter";
 }
 
 .NameTitle{
@@ -279,7 +462,7 @@ nav li a:hover, .dropdown-content-wrapper:hover{
     margin-bottom:0px;
     color: #9CC5A1;
     font-family: "Playfaire";
-    font-size: 50px;
+    font-size: 60px;
     font-weight:bold;
     text-shadow: 0px 0px 2px black;
     animation-name: name;
@@ -298,12 +481,14 @@ nav li a:hover, .dropdown-content-wrapper:hover{
     transition:0.3s;
 }
 
+
 .subtitle2{
     margin-top: 0px;
     margin-bottom:0px;
-    font-family: "OpenSans";
+    /* font-family: "OpenSans"; */
+    font-family: "typewritter";
     font-style:italic;
-    font-weight: bold;
+    /* font-weight: bold; */
     color:#DCE1DE
 }
 
@@ -314,7 +499,7 @@ nav li a:hover, .dropdown-content-wrapper:hover{
     margin-top: 0px;
     margin-bottom:0px;
     font-family: "Playfaire";
-    font-size:30px;
+    font-size:35px;
     font-weight: bold;
     color:#9CC5A1;
     text-shadow: 0px 0px 2px black;
@@ -324,6 +509,18 @@ nav li a:hover, .dropdown-content-wrapper:hover{
     color:#eb9bad;
     transition:0.3s;
 }
+
+.subtitle4{
+    margin-top: 0px;
+    margin-bottom:0px;
+    font-family: "Playfaire";
+    font-size:35px;
+    font-weight: bold;
+    color:#103434;
+    text-decoration: none;
+    /* text-shadow: 0px 0px 2px black; */
+}
+
 
 @font-face {
     font-family: "Playfaire";
@@ -335,12 +532,17 @@ nav li a:hover, .dropdown-content-wrapper:hover{
     src: url("fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf");
 }
 
+@font-face{
+    font-family: "typewritter";
+    src: url("fonts/Noto_Sans_Mono/NotoSansMono-VariableFont_wdth\,wght.ttf");
+}
+
 img{
     width:80%;
     /* margin-bottom:0px;
     margin-top:15px; */
     max-width:500px;
-    border-radius: 25px;
+    /* border-radius: 25px; */
 }
 
 @keyframes rotate{
@@ -354,7 +556,7 @@ img{
 .image-wrapper{
     position: relative;
 	z-index: 0;
-	border-radius: 25px;
+	/* border-radius: 25px; */
 	overflow: hidden;
 	padding:none;
     margin:5%;
@@ -409,6 +611,7 @@ img{
     background: rgba(0,0,0,0.5);
     padding:0px;
     transition:0.3s;
+    /* not in use  */
 }
 
 #bg:hover{
@@ -419,15 +622,15 @@ img{
 
 .para{
     color:#DCE1DE;
-    font-family: "OpenSans";
-
+    /* font-family: "OpenSans"; */
+    font-family:"typewritter";
     margin: 10px 20px 20px 20px;
-    border-radius: 25px;
+    border-radius: 5px;
     padding: 8px 16px;
     text-shadow: 0px 0px 2px black;
     border: 2px solid #9CC5A1;
     font-size:15px;
-    background:rgba(0,0,0,0.5);
+    background:rgba(0,0,0,0.7);
     
 }
 
@@ -474,13 +677,13 @@ img{
 }
 
 .hl{
-    width:50%;
+    width:80%;
     color:"#216869";
     margin-bottom: 0px;
     display:block;
     margin-left:auto;
     margin-right:auto;
-    border-top:2px solid #216869;
+    border-top:2px solid #9CC5A1;
 
 }
 
@@ -504,7 +707,8 @@ img{
 
 .description{
     color:#DCE1DE;
-    font-family: "OpenSans";
+    /* font-family: "OpenSans"; */
+    font-family: "typewritter";
     padding:20px;
     margin: 10px 20px 20px 20px;
     padding: 4px 8px;
@@ -592,12 +796,28 @@ img{
 }
 
 .UL{
-    color:#DCE1DE;
-    font-family: "OpenSans";
+    /* color:#DCE1DE; */
+    /* font-family: "OpenSans"; */
+    font-family: "typewritter";
     text-align:start;
     margin: 10px 20px 20px 20px;
     /* font-size: 10px; */
-    text-shadow: 0px 0px 2px black;
+    /* text-shadow: 0px 0px 2px black; */
+    color:#0e2e2e;
+}
+
+.UL li{
+    color:#DCE1DE;
+}
+
+.UL_dark{
+    font-family: "typewritter";
+    text-align:start;
+    margin: 10px 20px 20px 20px;
+}
+
+.UL_dark li{
+    color:#0e2e2e;
 }
 
 @media screen and (max-width: 712px){
@@ -642,10 +862,16 @@ img{
 }
 
 
-#Experiences-div{
+.Experiences-div{
     display:flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width:50%;
+    padding:none;
+    margin:none;
+    background: rgb(0 0 0 / 50%);
+    border: 2px solid #9CC5A1;
 }
 
 #skills-list{
@@ -676,7 +902,7 @@ img{
     .subtitle3{
         margin-top: 0px;
         margin-bottom:0px;
-        font-family: "Playfaire";
+        /* font-family: "Playfaire"; */
         font-size:30px;
         font-weight: bold;
         color:#9CC5A1;
@@ -716,8 +942,9 @@ img{
     position:relative;
     overflow:hidden;
     flex: 0 0 13%;
-    border-radius: 50px;
+    border-radius: 0px;
     opacity: 0.75;  
+    border:2px solid #9CC5A1;
   }
 
   .accordion li img{
@@ -728,6 +955,8 @@ img{
     width:100%;
     height:100%;
     object-fit: cover;
+    border-radius:5px;   
+    
 
   }
   
@@ -819,8 +1048,11 @@ img{
     display:flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin:20px;
-    gap:20px;
+    margin:none;
+    padding:none;
+    gap:none;
+    /* margin:20px; */
+    /* gap:20px; */
 }
 
 .projects-pic-div img{
@@ -880,9 +1112,15 @@ img{
 .skills-icon{
     margin:10px;
     width:50px;
+    height:50px;
     border-radius: 20px;
     background:#103434;
     padding: 10px;
+}
+
+#footer{
+    margin:none;
+    /* background:red; */
 }
 /* 
 margin:10px;

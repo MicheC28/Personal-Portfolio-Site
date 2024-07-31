@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+
+<head>
+    <!-- IMPORT CSS: STYLE.CSS -->
+    <link rel="stylesheet" href="style.css">
+
+<body onload="scrollFunction()">
+
+    <!-- Navigation Bar -->
+    <nav class="nav-contrainer" id="navbar">
+        <p class="subtitle3" id="logo"><span class="logo_pink">//</span>mc</p>
+
+        <ul id="nav-bar-links">
+
+            <!-- Nav Bar: HOME -->
+            <li>
+                <a id="nav-homepage"> home</a>
+            </li>
+
+            <!-- Nav Bar: PROJECTS (homepage, ideas list, notes) -->
+            <li>
+                <a id="nav-projects">projects</a>
+                <div class="dropdown-content-wrapper">
+
+                    <div class="dropdown-content">
+                        <a id="nav-projects-projectsHomepage">
+                            All Projects
+                        </a>
+                    </div>
+
+                    <!-- new -->
+                     <div class="dropdown-content">
+                        <a id="nav-projects-digitalClip">
+                            Digital Clipboard Chrome Extension
+                        </a>
+                     </div>
+
+                     <div class="dropdown-content">
+                        <a id="nav-projects-AlertMed">
+                            Alerting Medication Case
+                        </a>
+                     </div>
+                    
+                     <div class="dropdown-content">
+                        <a id="nav-projects-Portfolio">
+                            Personal Portfolio Site
+                        </a>
+                     </div>
+
+                     <div class="dropdown-content">
+                        <a id="nav-projects-Windsor">
+                            Windsor Housing Prediction Model
+                        </a>
+                     </div>
+
+                     <div class="dropdown-content">
+                        <a id="nav-projects-RainyRiches">
+                            Rainy Riches Game
+                        </a>
+                     </div>
+
+                    <div class="dropdown-content">
+                        <a id="nav-projects-notes">
+                            notes
+                        </a>
+                    </div>
+
+                </div>
+            
+            </li>
+
+            <!-- Nav Bar: MiChe Arts Collection (homepage, Minis, Iteration1, Individuals) -->
+            <li class="drowdown-li"> 
+                <a class="temp" id="nav-MiChe"> MiChe </a>
+                <div class="dropdown-content-wrapper">
+
+                    <div class="dropdown-content">
+                        <a id="nav-MiChe-Homepage">
+                            MiChe homepage
+                        </a>
+                    </div>
+                    
+                    <div class="dropdown-content">
+                        <a id = "nav-MiChe-Minis">
+                            Minis Collection
+                        </a>
+                    </div>
+                    
+                    <div class="dropdown-content">
+                        <a id="nav-MiChe-Iteration1">
+                            Iteration 1 Collection
+                        </a>
+                    </div>
+
+                    <div class="dropdown-content">
+                        <a id="nav-MiChe-Individuals">
+                            Individual Pieces
+                        </a>
+                    </div>
+
+                </div>
+                
+            </li>
+
+            <!-- Nav Bar: CONTACT (mailto) -->
+            <li> 
+                <a id="nav-contact" href="mailto:m89chen@uwaterloo.ca">
+                contact me!
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+    <!-- SPACING -->
+    <div class="headspace"></div>
+    <div class="headspace"></div>
+
+
+
+    <div class="sec_1">
+        <div class="headspace"></div>
+        <span style="text-align: center;">
+            <!-- <p class="subtitle4"> Personal Projects</p> -->
+            <p class="subtitle1_dark" ><a href="Projects-page.html" style="text-decoration-color:#0e2e2e;color:#0e2e2e">Personal Projects</a>  > <b>Digital Clipboard Chrome Extension</b></p>
+        </span>
+        <!-- <div class="headspace"></div> -->
+    </div>
+
+    <div class="headspace"></div>
+    <!-- <div class="headspace"></div> -->
+
+
+    <div style="display: flex; flex-direction: row; justify-content: center;">
+        <div class="sec_2" style="width:80%;">
+            <div class="headspace"></div>
+            <p class="subtitle3">Digital Clipboard Chrome Extension</p>
+            <p class="description"> HTML5, CSS, JavaScript | Dec 2023 - Jan 2024 </p>
+            
+            <div style="display:flex; flex-direction:row; justify-content: center; align-items: center; gap:0px; width:80%;">
+                <div style="display:flex; flex-direction: column; justify-content: center; align-items: center;">
+                    <ul class="UL">
+                                    
+                        <li>
+                            Created a Chrome extension that allows users to keep track of important sites and accompanying notes.
+                        </li>
+                        
+                        <p></p>
+                        
+                        <li>
+                                Used HTML5 and CSS3 to create an intuitive user interface as well as a JavaScript
+                                program that notes down the URL of the current tab with the click of a button.
+                        </li>
+                        
+                        <p></p>
+                        
+                        <li>
+                                Key aspects include the use of DOM to take input from HTML elements, the use of
+                                arrays to store URLs and sidenotes, and manipulation of the browser's local storage.
+                        </li>
+
+                    </ul>
+
+                    <a href="https://github.com/MicheC28/Online-Clipboard">
+                        <img class="projects-icon" src="images/github_logo.png">
+                    </a>
+                
+                </div>
+
+                <img  src="images/digitalClipboardDemo12.png" Alt="Screen of a digital clipboard chrome extension. Designed to mimic a clipboard wtih 2 URLs noted down.">
+                
+            </div>
+
+            <div class="headspace"> </div>
+
+
+            <div style="display:flex; flex-direction:column; justify-content: center; align-items: center;">
+                <!-- <img style="border-radius:0px; width: 30vw;"  src="images/DigitalClipboardDemo.gif"> -->
+
+                <p class="description"> Here's a quick demo!</p>
+                <video width="80%;"controls>
+                    <source src="images/Digital Clipboard Demo - Made with Clipchamp.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="headspace"></div>
+
+            <!-- <div class="headspace"></div> -->
+
+            <div style="display:flex; flex-direction: row; justify-content: center; align-items: center; width:80%;">
+                <img src="images/digitalClipboard.png" Alt="Screenshot of digital clipboard chrome extention" style="width: 30%;">
+                
+                <p class="description"> 
+                    The <b>Digital Clipboard</b> helps keep a record of different sites and notes when doing research online. <br><br>
+                    As the user is reading through an article or site, they can keep notes by entering them in the text bar. Once they've noted everything they want to note, 
+                    they click the <b>'ADD'</b> button to create a new list item on the digital clipboard. The new list item includes the notes followed by the URL of the current site.<br><br>
+                    Alternatively, users can also delete list items. Clicking the <b>'REMOVE'</b> button deletes the most recent list item.
+
+                </p>
+
+                
+            </div>
+
+            <div class="headspace"></div>
+        </div>
+    </div>
+
+    <div class="headspace"></div>
+
+    <footer>
+        <div id="footer" class="sec_1">
+            <!-- <p class="subtitle4"> Reach Out</p>
+            <a href="mailto.m89chen@uwaterloo.ca" style="text-decoration: none;"><p class="subtitle1_dark" >Contact</p></a>
+
+            <p class="subtitle4">Projects</p>
+            <p id="accordion-buttons-Medication"> test</p> -->
+
+            <marquee behavior="alternate" direction="left" scrollamount="10"><p class="subtitle4">LIVE LAUGH LOVE </p></marquee>
+            
+
+        </div>
+    </footer>
+
+
+    <!-- IMPORT SCRIPT FOR PROJECT IDEAS LIST  -->
+    <script src="project_ideas.js"></script>
+</body>
+
+<!-- IMPORT GENERAL SCRIPT.JS  -->
+<script src="script.js"></script>
+
+</head>
