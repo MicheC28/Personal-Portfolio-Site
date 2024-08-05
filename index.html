@@ -3,6 +3,8 @@
     <!-- Import CSS -->
     <link rel="stylesheet" href="style.css">
 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&display=swap" rel="stylesheet">
@@ -11,9 +13,14 @@
         
         <!-- Navigation Bar -->
         <nav class="nav-contrainer" id="navbar">
+            
             <p class="subtitle3" id="logo"><span class="logo_pink">//</span>mc</p>
     
             <ul id="nav-bar-links">
+                
+                <!-- <li>
+                    <a id="logo"><span class="logo_pink">//</span>mc</a>
+                </li> -->
 
                 <!-- Nav Bar: HOME -->
                 <li>
@@ -107,9 +114,7 @@
 
                 <!-- Nav Bar: CONTACT (mailto) -->
                 <li> 
-                    <a id="nav-contact" href="mailto:m89chen@uwaterloo.ca">
-                    contact me!
-                    </a>
+                    <a id="nav-contact" href="mailto:m89chen@uwaterloo.ca">contact</a>
                 </li>
 
             </ul>
@@ -145,7 +150,7 @@
 
             </div>
 
-            <div id="about-wrapper" style="width:60%; height:50%;">
+            <div id="about-wrapper" >
                 <p class="subtitle3" style="text-align: center;"><span style="color:#eb9bad;">//</span>About me</p>
                 <p class="para" style="font-size: 15px; text-align: left;"> 
                     <br>
@@ -376,12 +381,12 @@
                                 <span>
 
                                         <!-- TITLE -->
-                                        <p class="description" style="font-style:italic;font-weight:bold;margin-bottom:0px;">
+                                        <p class="description description-projectsAccordion-title">
                                             Rainy Riches Game
                                         </p>
 
                                         <!-- SKILLS -->
-                                        <p class="description" style="font-size:small; font-style: italic;margin-top:0px;">
+                                        <p class="description description-projectsAccordion-subtitle">
                                             Processing5, PowerPoint<br>
                                             July 2021
                                         </p>
@@ -420,7 +425,7 @@
                 
                 
                 
-                <div style="display: flex; flex-direction: row;align-items: centered; padding:20px 0px; gap:20px; justify-content: center;">
+                <div id = "work-content-wrapper-2">
                     
                     <!-- <div class="Experiences-div" style="background:#9CC5A1; width:15%;"></div> -->
                     
@@ -525,7 +530,7 @@
                 <div class="headspace"></div>
 
                 <div id="edu-content-wrapper">
-                    <div style="width:50%;">
+                    <div class="edu-content-section">
 
                         <div style="width:90%;">
                             <p class="subtitle1" style="font-family: 'Playfaire'; font-size:20px; "> <i>Candidate for BASc in Computer Engineering (2028)</i></p>
@@ -538,7 +543,7 @@
                         </div>
                     </div>
 
-                    <div style="width:50%;">
+                    <div class="edu-content-section">
                         <p class="subtitle1" style="font-family: 'Playfaire'; font-size:25px; font-weight:bold;">Relevent Coursework</p>
 
                         <ul class="UL">
@@ -566,7 +571,7 @@
 
              <!-- <p class="subtitle3">Awards and Certifications</p> -->
                 <div id="awards-cert-content-wrapper">
-                    <div style="width:50%;">
+                    <div class="edu-content-section">
                         <p class="subtitle1" style="font-family: 'Playfaire'; font-size:25px; font-weight: bold;"> Awards and Scholarships</p>
                         <ul class="UL">
                             <li>Governor General's Academic Medal - Highest Graduating Average</li>
@@ -576,7 +581,7 @@
                         </ul>
                     </div>
 
-                    <div style="width:50%;">
+                    <div class="edu-content-section">
                         <p class="subtitle1" style="font-family: 'Playfaire'; font-size:25px; font-weight:bold;">Certifications</p>
                         <ul class="UL">
                             <li>Python Certificate - Kaggle</li>

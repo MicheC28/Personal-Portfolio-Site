@@ -68,6 +68,13 @@ balls.forEach((el, i, ra) => {
     y: Math.random() * 12 // Random y offset
   };
 
+  while(to.x > windowWidth && to.y>windowHeight){
+    to = {
+      x: Math.random() * (i % 2 === 0 ? -11 : 11), // Random x offset (negative for even-indexed balls)
+      y: Math.random() * 12 // Random y offset
+    };
+  }
+
   // Define the animation for each ball element
   let anim = el.animate(
     [

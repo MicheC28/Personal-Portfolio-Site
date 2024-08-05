@@ -4,6 +4,9 @@
     <!-- IMPORT CSS: STYLE.CSS -->
     <link rel="stylesheet" href="style.css">
 
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <body onload="scrollFunction()">
 
     <!-- Navigation Bar -->
@@ -120,7 +123,6 @@
 
 
     <div class="sec_1">
-        <div class="headspace"></div>
         <span style="text-align: center;">
             <!-- <p class="subtitle4"> Personal Projects</p> -->
             <p class="subtitle1_dark" ><a href="Projects-page.html" style="text-decoration-color:#0e2e2e;color:#0e2e2e">Personal Projects</a>  > <b>Digital Clipboard Chrome Extension</b></p>
@@ -132,13 +134,15 @@
     <!-- <div class="headspace"></div> -->
 
 
-    <div style="display: flex; flex-direction: row; justify-content: center;">
+    <div class="Projects_sec">
         <div class="sec_2" style="width:80%;">
             <div class="headspace"></div>
             <p class="subtitle3">Digital Clipboard Chrome Extension</p>
             <p class="description"> HTML5, CSS, JavaScript | Dec 2023 - Jan 2024 </p>
             
-            <div style="display:flex; flex-direction:row; justify-content: center; align-items: center; gap:0px; width:80%;">
+            <div id="Projects_DigitalClip_Intro" >
+                <img  src="images/digitalClipboardDemo12.png" Alt="Screen of a digital clipboard chrome extension. Designed to mimic a clipboard wtih 2 URLs noted down.">
+                
                 <div style="display:flex; flex-direction: column; justify-content: center; align-items: center;">
                     <ul class="UL">
                                     
@@ -168,7 +172,7 @@
                 
                 </div>
 
-                <img  src="images/digitalClipboardDemo12.png" Alt="Screen of a digital clipboard chrome extension. Designed to mimic a clipboard wtih 2 URLs noted down.">
+                
                 
             </div>
 
@@ -188,8 +192,8 @@
 
             <!-- <div class="headspace"></div> -->
 
-            <div style="display:flex; flex-direction: row; justify-content: center; align-items: center; width:80%;">
-                <img src="images/digitalClipboard.png" Alt="Screenshot of digital clipboard chrome extention" style="width: 30%;">
+            <div class="Projects" style="display:flex; flex-direction: column; justify-content: center; align-items: center; width:80%;">
+                
                 
                 <p class="description"> 
                     The <b>Digital Clipboard</b> helps keep a record of different sites and notes when doing research online. <br><br>
@@ -198,6 +202,8 @@
                     Alternatively, users can also delete list items. Clicking the <b>'REMOVE'</b> button deletes the most recent list item.
 
                 </p>
+
+                <img src="images/digitalClipboard.png" Alt="Screenshot of digital clipboard chrome extention" style="width: 80%;">
 
                 
             </div>

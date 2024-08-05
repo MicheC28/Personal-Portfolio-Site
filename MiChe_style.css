@@ -1,3 +1,88 @@
+/* Mobile  */
+
+@media screen and (max-width: 415px){
+    #MiChe_title{
+        /* display: none; */
+        /* background:red; */
+    }
+
+    nav li a{
+        font-size: 16px;
+        
+        
+        padding:0px 10px;
+        margin:none;
+        
+        transition: 0.3s;
+        text-decoration:underline;
+        text-decoration-color: #103434;
+        font-family: "Playfaire";
+        color:#9CC5A1;
+        text-shadow: 0px 0px 2px black;
+        /* border:2px solid red; */
+    
+        
+    }
+    
+    nav li a:hover, .dropdown-content-wrapper:hover{
+        color:#eb9bad;
+        /* padding-bottom:10px;
+        border-bottom:4px #eb9bad solid; */
+        text-decoration-color:#eb9bad; 
+        
+        transition:0.3s;
+    
+       
+    }
+
+    nav{
+        /* background-color: #103434; */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left:-20px;
+        width: 100%;
+        padding: 0 10px;
+        box-shadow: 0px 10px 10px rgba(128, 128, 128, 0.548);
+        color: white;
+        z-index: 11;
+        transition: top 0.5s;
+    }
+
+    nav ul{
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        gap:1px;
+        z-index:11; 
+        transition:0.5s;
+    }
+
+    .TOF-organizer{
+
+        flex-direction:column;
+    
+        
+    }
+
+    .TOF-organizer div{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #MiChe_title{
+        /* font-size:20px; */
+    }
+
+
+}
+
+
 /* GENERAL SECTIONS  */
 .body{
     min-width: 2000px;
@@ -36,7 +121,8 @@ hr{
 
 #MiChe_intro_wrapper{
     display:flex;
-    flex-direction:row;
+    flex-direction:column;
+    gap:20px;
     justify-content: center;
     align-items: center;
     text-align:center;
@@ -51,9 +137,9 @@ hr{
 }
 
 #MiChe_title{
-    font-size:50px;
+    /* font-size:50px; */
     border-radius:25px;
-    text-align:left;
+    text-align:center;
     transition:0.3s;
     animation-name: name;
     animation-duration:4s;
@@ -65,7 +151,7 @@ hr{
 /* HOMEPAGE: TABLE OF CONTENTS STYLING  */
 .TOF-organizer{
     display:flex;
-    flex-direction:row;
+    flex-direction:column;
     justify-content: center;
     align-items: center;
     
@@ -162,7 +248,7 @@ hr{
 }
 
 .subtitle3-miche-100px{
-    font-size:100px;
+    font-size:80%;
 }
 
 .description-miche{
